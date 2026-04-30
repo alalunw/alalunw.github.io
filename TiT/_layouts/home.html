@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="hero animate-on-scroll">
+    <h1 class="hero-title">{{ site.title }}</h1>
+    <p class="hero-subtitle" style="font-size: var(--text-xl); color: var(--text-secondary); max-width: 60ch;">
+      {{ site.description }}
+    </p>
+  </div>
+
+  <div style="margin-top: var(--space-16);">
+    <h2 style="font-size: var(--text-2xl); font-family: var(--font-body); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-tertiary); margin-bottom: var(--space-8);">
+      Latest Writing
+    </h2>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li class="post-item">
+          <article class="post-card">
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: '%B %d, %Y' }}
+            </time>
+            <h3 class="post-title">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h3>
+            {% if post.excerpt %}
+              <p class="post-excerpt">{{ post.excerpt }}</p>
+            {% endif %}
+            <div class="post-meta">
+              {% if post.categories.size > 0 %}
+                <span class="post-category">{{ post.categories.first }}</span>
+              {% endif %}
+              {% if site.theme_config.show_reading_time %}
+                <span>{{ page.words | default: 300 | divided_by: 200 }} min read</span>
+              {% endif %}
+            </div>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

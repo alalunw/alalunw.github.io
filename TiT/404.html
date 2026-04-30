@@ -1,25 +1,15 @@
 ---
 permalink: /404.html
 layout: default
+title: Page Not Found
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <div class="error-page">
+    <h1>404</h1>
+    <p>The page you're looking for seems to have wandered off.</p>
+    <a href="{{ site.baseurl }}/" style="display: inline-block; margin-top: var(--space-8); padding: var(--space-4) var(--space-8); background-color: var(--accent-primary); color: white; border-radius: var(--radius-md); font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+      Return Home
+    </a>
+  </div>
 </div>

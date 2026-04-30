@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<article class="article">
+  <header class="article-header">
+    <h1 class="article-title">{{ page.title }}</h1>
+    <div class="article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: '%B %d, %Y' }}
+      </time>
+      {% if page.author %}
+        <span>{{ page.author }}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+</article>
+
+{% if site.posts.size > 1 %}
+  <div class="container" style="margin-top: var(--space-24);">
+    <nav class="post-navigation" style="display: flex; justify-content: space-between; padding-top: var(--space-8); border-top: 1px solid var(--border-color);">
+      {% if page.previous.url %}
+        <a href="{{ page.previous.url | prepend: site.baseurl }}" class="nav-prev" style="display: flex; flex-direction: column; gap: var(--space-2);">
+          <span style="font-size: var(--text-xs); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em;">Previous</span>
+          <span style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--text-primary);">{{ page.previous.title }}</span>
+        </a>
+      {% else %}
+        <div></div>
+      {% endif %}
+
+      {% if page.next.url %}
+        <a href="{{ page.next.url | prepend: site.baseurl }}" class="nav-next" style="display: flex; flex-direction: column; gap: var(--space-2); text-align: right;">
+          <span style="font-size: var(--text-xs); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em;">Next</span>
+          <span style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--text-primary);">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+    </nav>
+  </div>
+{% endif %}
