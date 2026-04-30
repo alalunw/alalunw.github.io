@@ -426,6 +426,11 @@ figcaption {
   position: relative;
 }
 
+/* Hide any dedicated hero visual on smaller layouts to prevent duplication */
+.hero-visual {
+  display: none !important;
+}
+
 @media (min-width: 1100px) {
   .hero {
     grid-template-columns: 58% 42%;
