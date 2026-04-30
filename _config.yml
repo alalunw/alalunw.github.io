@@ -23,6 +23,7 @@ github_username: alalunw
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Permalinks
 permalink: /:year/:month/:day/:title/

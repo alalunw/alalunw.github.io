@@ -1103,3 +1103,30 @@ figcaption {
     scroll-behavior: auto;
   }
 }
+/* Simple About dropdown in navigation (accessible-ish, lightweight) */
+.site-nav__dropdown { position: relative; display: inline-block; }
+.site-nav__dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 140px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 6px 0;
+  z-index: 50;
+}
+.site-nav__dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.dropdown-item:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}

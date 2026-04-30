@@ -1,15 +1,17 @@
 ---
 permalink: /404.html
 layout: default
-title: Page Not Found
 ---
 
-<div class="container">
-  <div class="error-page">
-    <h1>404</h1>
-    <p>The page you're looking for seems to have wandered off.</p>
-    <a href="{{ site.baseurl }}/" style="display: inline-block; margin-top: var(--space-8); padding: var(--space-4) var(--space-8); background-color: var(--accent-primary); color: white; border-radius: var(--radius-md); font-weight: 500; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-      Return Home
+<section class="page-404">
+  <div class="page-404__number" aria-hidden="true">404</div>
+  <div class="page-404__content animate-in">
+    <h1 class="page-404__title">Lost in the margins</h1>
+    <p class="page-404__text">
+      This page doesn't exist — perhaps it was never written, or it drifted somewhere beyond the archive.
+    </p>
+    <a href="{{ '/' | relative_url }}" class="page-404__link">
+      &larr; Return to index
     </a>
   </div>
-</div>
+</section>

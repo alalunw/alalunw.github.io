@@ -2,9 +2,17 @@
   <a href="{{ '/' | relative_url }}" class="site-nav__link{% if page.url == '/' %} site-nav__link--active{% endif %}">
     <span>Index</span>
   </a>
-  <a href="{{ '/about/' | relative_url }}" class="site-nav__link{% if page.url == '/about/' %} site-nav__link--active{% endif %}">
-    <span>About</span>
-  </a>
+
+  <div class="site-nav__dropdown">
+    <a href="{{ '/about/' | relative_url }}" class="site-nav__link{% if page.url == '/about/' %} site-nav__link--active{% endif %}">
+      <span>About</span>
+    </a>
+    <div class="dropdown-menu" aria-label="About dropdown">
+      <a class="dropdown-item" href="{{ '/about/' | relative_url }}#bio">Bio</a>
+      <a class="dropdown-item" href="{{ '/about/' | relative_url }}#resume">Resume</a>
+    </div>
+  </div>
+
   {% if site.collections.projects.output %}
   <a href="{{ '/projects/' | relative_url }}" class="site-nav__link{% if page.url contains '/projects/' %} site-nav__link--active{% endif %}">
     <span>Projects</span>

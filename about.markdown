@@ -1,46 +1,30 @@
 ---
 layout: page
 title: About
+subtitle: A digital garden tended with care
 permalink: /about/
 ---
 
-<div style="max-width: 60ch; margin: 0 auto;">
-  <p style="font-size: var(--text-lg); line-height: 1.8;">
-    Welcome to <strong>Thoughts In Tremolo</strong> — a space for exploring ideas at the intersection of technology,
-    culture, and human experience. This is a digital garden where essays, projects, and visual stories live together.
-  </p>
+This is **Thoughts in Tremolo** — a space for ideas that resonate, persist, and evolve.
 
-  <p>
-    Here you'll find:
-  </p>
+## Bio
 
-  <ul style="list-style: none; padding-left: 0; margin: var(--space-8) 0;">
-    <li style="margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-      <span style="color: var(--accent-primary);">✦</span>
-      <span><strong>Essays</strong> — Long-form writing on technology and society</span>
-    </li>
-    <li style="margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-      <span style="color: var(--accent-primary);">✦</span>
-      <span><strong>Projects</strong> — Creative experiments and technical explorations</span>
-    </li>
-    <li style="margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-3);">
-      <span style="color: var(--accent-primary);">✦</span>
-      <span><strong>Notes</strong> — Brief observations and half-formed thoughts</span>
-    </li>
-  </ul>
+I’m a writer and builder exploring technology, culture, and the human side of the digital world. This bio section provides context for readers and serves as a landing point from the About menu.
 
-  <p>
-    This site is built with <a href="https://jekyllrb.com/">Jekyll</a> and designed with a commitment to
-    clarity, readability, and thoughtful interaction. The design evolves over time, reflecting the ongoing
-    process of refinement and discovery.
-  </p>
+## Resume
 
-  <div style="margin-top: var(--space-12); padding: var(--space-8); background-color: var(--bg-secondary); border-radius: var(--radius-lg);">
-    <h3 style="margin-bottom: var(--space-4);">Get in Touch</h3>
-    <p style="margin-bottom: 0;">
-      I'm always open to discussing new ideas, collaborations, or simply exchanging thoughts.
-      You can find me on <a href="https://github.com/{{ site.github_username }}">GitHub</a> or
-      <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>.
-    </p>
-  </div>
-</div>
+Downloadable resume (or link to a resume section) can live here. For now, you can replace this with a real resume or a link to a PDF.
+
+I write about technology, culture, and the spaces where human experience intersects with the digital. Some pieces are finished essays; others are seedlings, still growing. This is a garden, not a feed — things may shift, expand, or find new connections over time.
+
+### What you'll find here
+
+- **Essays** — Long-form thinking on topics that deserve more than a hot take
+- **Projects** — Things I've built, broken, and learned from
+- **Media** — Visual stories, photographs, and experiments in form
+
+### Colophon
+
+This site is built with [Jekyll](https://jekyllrb.com/), set in **Playfair Display** and **Source Serif 4**. The theme was crafted from scratch — no templates, no frameworks, just HTML, CSS, and the occasional line of JavaScript.
+
+The design prioritizes readability, respects your attention, and adapts to your preference for light or dark environments.

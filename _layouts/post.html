@@ -2,42 +2,58 @@
 layout: default
 ---
 
-<article class="article">
-  <header class="article-header">
-    <h1 class="article-title">{{ page.title }}</h1>
-    <div class="article-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: '%B %d, %Y' }}
-      </time>
-      {% if page.author %}
-        <span>{{ page.author }}</span>
+<article class="post-layout">
+  <div class="reading-progress" data-reading-progress></div>
+  <header class="post-header animate-in">
+    {% if page.category %}
+    <span class="post-header__category">{{ page.category | capitalize }}</span>
+    {% endif %}
+    <h1 class="post-header__title">{{ page.title }}</h1>
+    <div class="post-header__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time>
+      {% if site.theme_config.show_reading_time %}
+      <span class="post-header__meta-divider"></span>
+      <span>{% include reading-time.html %}</span>
       {% endif %}
     </div>
+    {% if page.image %}
+    <div class="post-header__image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+    </div>
+    {% endif %}
   </header>
 
-  <div class="article-content">
+  {% if page.category == 'project' and page.project_meta %}
+  <div class="post-content">
+    <div class="project-meta reveal">
+      {% for item in page.project_meta %}
+      <div class="project-meta__item">
+        <span class="project-meta__label">{{ item[0] }}</span>
+        <span class="project-meta__value">{{ item[1] }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="post-content reveal">
     {{ content }}
   </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-nav" aria-label="Post navigation">
+    {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" class="post-nav__link">
+      <span class="post-nav__label">Previous</span>
+      <span class="post-nav__title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" class="post-nav__link post-nav__link--next">
+      <span class="post-nav__label">Next</span>
+      <span class="post-nav__title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
 </article>
-
-{% if site.posts.size > 1 %}
-  <div class="container" style="margin-top: var(--space-24);">
-    <nav class="post-navigation" style="display: flex; justify-content: space-between; padding-top: var(--space-8); border-top: 1px solid var(--border-color);">
-      {% if page.previous.url %}
-        <a href="{{ page.previous.url | prepend: site.baseurl }}" class="nav-prev" style="display: flex; flex-direction: column; gap: var(--space-2);">
-          <span style="font-size: var(--text-xs); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em;">Previous</span>
-          <span style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--text-primary);">{{ page.previous.title }}</span>
-        </a>
-      {% else %}
-        <div></div>
-      {% endif %}
-
-      {% if page.next.url %}
-        <a href="{{ page.next.url | prepend: site.baseurl }}" class="nav-next" style="display: flex; flex-direction: column; gap: var(--space-2); text-align: right;">
-          <span style="font-size: var(--text-xs); color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.05em;">Next</span>
-          <span style="font-family: var(--font-display); font-size: var(--text-lg); color: var(--text-primary);">{{ page.next.title }}</span>
-        </a>
-      {% endif %}
-    </nav>
-  </div>
-{% endif %}
