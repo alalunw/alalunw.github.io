@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  {% include head-seo.html %}
+  <title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{ site.title | escape | replace: '_', ' ' }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+</head>
+<body>
+  {% include header.html %}
+
+  <main role="main" aria-label="Content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

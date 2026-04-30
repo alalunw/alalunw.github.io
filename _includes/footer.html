@@ -1,0 +1,16 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__credit">
+      &copy; {{ 'now' | date: '%Y' }} {{ site.author.name }}. Thoughts in Tremolo.
+    </div>
+    <div class="site-footer__links">
+      {% if site.twitter_username %}
+      <a href="https://twitter.com/{{ site.twitter_username }}" class="site-footer__link" rel="me">Twitter</a>
+      {% endif %}
+      {% if site.github_username %}
+      <a href="https://github.com/{{ site.github_username }}" class="site-footer__link" rel="me">GitHub</a>
+      {% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}" class="site-footer__link">RSS</a>
+    </div>
+  </div>
+</footer>

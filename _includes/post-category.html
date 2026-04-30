@@ -1,0 +1,11 @@
+{% if page.category == 'project' %}
+<span class="post-card__category">Project</span>
+{% elsif page.category == 'media' %}
+<span class="post-card__category">Media</span>
+{% elsif page.categories contains 'essay' %}
+<span class="post-card__category">Essay</span>
+{% elsif page.categories contains 'update' %}
+<span class="post-card__category">Update</span>
+{% else %}
+<span class="post-card__category">{{ page.category | default: 'Post' | capitalize }}</span>
+{% endif %}
