@@ -36,3 +36,11 @@ I write about technology, culture, and the spaces where human experience interse
 This site is built with [Jekyll](https://jekyllrb.com/), set in **Playfair Display** and **Source Serif 4**. The theme was crafted from scratch — no templates, no frameworks, just HTML, CSS, and the occasional line of JavaScript.
 
 The design prioritizes readability, respects your attention, and adapts to your preference for light or dark environments.
+
+## Essays {#essay}
+
+This is a collection of essays; future posts will be categorized here.
+
+## Media {#media}
+
+Visual content and media notes.
