@@ -11,6 +11,16 @@ writing:
     - label: Projects
       url: "/projects/"
 
+about_me:
+  label: About Me
+  url: "/about/#bio"
+  button: true
+
+spotify_playlists:
+  label: Playlists
+  url: "/spotify-playlists/"
+  button: true
+
 about:
   label: About
   url: "/about/"
