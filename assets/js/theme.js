@@ -48,6 +48,29 @@
 })();
 
 (function () {
+  function initNavDropdowns() {
+    var ddEls = document.querySelectorAll('.site-nav__dropdown');
+    ddEls.forEach(function(dd) {
+      dd.style.position = 'relative';
+      var menu = dd.querySelector('.dropdown-menu');
+      if (menu) {
+        menu.style.display = 'none';
+      }
+      dd.addEventListener('click', function(e) {
+        // If the click originated on an anchor inside the dd, allow navigation
+        if (e.target && e.target.tagName && e.target.tagName.toLowerCase() === 'a') {
+          return;
+        }
+        e.preventDefault();
+        var open = dd.classList.toggle('open');
+        if (menu) menu.style.display = open ? 'block' : 'none';
+      });
+    });
+  }
+  document.addEventListener('DOMContentLoaded', initNavDropdowns);
+})();
+
+(function () {
   var observer = null;
 
   function initScrollReveal() {
