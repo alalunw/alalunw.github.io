@@ -7,17 +7,17 @@ permalink: /about/
 
 This is **Thoughts in Tremolo** — a space for ideas that resonate, persist, and evolve.
 
-## Bio
+## Bio {#bio}
 
 I’m a writer and builder exploring technology, culture, and the human side of the digital world. This bio section provides context for readers and serves as a landing point from the About menu.
 
-## Resume
+## Resume {#resume}
 
-### Essays
+## Essays {#essay}
 
 - Essays are listed below in case you want to browse by topic.
 
-### Media
+## Media {#media}
 
 - Media content and visuals.
 
