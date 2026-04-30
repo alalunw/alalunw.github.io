@@ -96,6 +96,31 @@ body {
   cursor: default;
 }
 
+/* Mobile: balance hero and hide large decorative image to prevent crowding */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: var(--space-3xl) var(--space-xl);
+  }
+  .hero-visual {
+    display: none;
+  }
+  .hero__title {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+  }
+  .hero__subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile readability tweaks for post content */
+@media (max-width: 768px) {
+  .content-area { padding: 0 1rem; }
+  .post-layout .post-header__title { font-size: 1.8rem; line-height: 1.15; }
+  .post-layout .post-content { font-size: 1rem; line-height: 1.75; max-width: 90%; }
+  .post-card__title { font-size: 1.15rem; }
+  .post-card__excerpt { font-size: 0.95rem; }
+}
 body::after {
   content: '';
   position: fixed;
@@ -393,7 +418,7 @@ figcaption {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 60% 40%;
   gap: 3rem;
   padding: var(--space-4xl) var(--space-xl) var(--space-3xl);
   max-width: var(--measure-wide);
