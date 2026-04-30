@@ -13,6 +13,14 @@ I’m a writer and builder exploring technology, culture, and the human side of 
 
 ## Resume
 
+### Essays
+
+- Essays are listed below in case you want to browse by topic.
+
+### Media
+
+- Media content and visuals.
+
 Downloadable resume (or link to a resume section) can live here. For now, you can replace this with a real resume or a link to a PDF.
 
 I write about technology, culture, and the spaces where human experience intersects with the digital. Some pieces are finished essays; others are seedlings, still growing. This is a garden, not a feed — things may shift, expand, or find new connections over time.
