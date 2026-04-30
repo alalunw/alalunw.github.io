@@ -32,15 +32,14 @@ layout: default
           <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
           {% endif %}
         </div>
-      {% if post.image %}
+      {% assign img_path = post.image | default: post.cover-img | default: post.thumbnail-img %}
       <div class="post-card__image">
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
-      </div>
-      {% else %}
-      <div class="post-card__image">
+        {% if img_path %}
+        <img src="{{ img_path | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
+        {% else %}
         <img src="{{ '/assets/img/tit.png' | relative_url }}" alt="Post image" loading="lazy">
+        {% endif %}
       </div>
-      {% endif %}
       </article>
       {% else %}
       <article class="post-card reveal reveal--delay-{% cycle '1', '2', '3', '4' %}">

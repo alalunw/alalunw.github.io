@@ -16,15 +16,14 @@ layout: default
       <span>{% include reading-time.html %}</span>
       {% endif %}
     </div>
-  {% if page.image %}
+  {% assign img_path = page.image | default: page.cover-img | default: page.thumbnail-img %}
   <div class="post-header__image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
-  </div>
-  {% else %}
-  <div class="post-header__image">
+    {% if img_path %}
+    <img src="{{ img_path | relative_url }}" alt="{{ page.title | escape }}">
+    {% else %}
     <img src="{{ '/assets/img/tit.png' | relative_url }}" alt="Post image">
+    {% endif %}
   </div>
-  {% endif %}
   </header>
 
   {% if page.category == 'project' and page.project_meta %}
