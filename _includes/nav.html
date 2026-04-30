@@ -1,24 +1,23 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <!-- Writing dropdown: adds a proper content-driven navigation for posts -->
-  <div class="site-nav__dropdown writing">
-    <a href="{{ '/' | relative_url }}" class="site-nav__link{% if page.url == '/' %} site-nav__link--active{% endif %}">
-      <span>Writing</span>
-    </a>
-    <div class="dropdown-menu" aria-label="Writing dropdown">
-      <a class="dropdown-item" href="{{ '/' | relative_url }}">All Posts</a>
-      <a class="dropdown-item" href="{{ '/about/' | relative_url }}#essays">Essays</a>
-      <a class="dropdown-item" href="{{ '/about/' | relative_url }}#media">Media</a>
-      <a class="dropdown-item" href="{{ '/projects/' | relative_url }}">Projects</a>
-    </div>
-  </div>
-
-  <a href="{{ '/about/' | relative_url }}" class="site-nav__link{% if page.url == '/about/' %} site-nav__link--active{% endif %}">
-    <span>About</span>
-  </a>
-  {% if site.collections.projects.output %}
-  <a href="{{ '/projects/' | relative_url }}" class="site-nav__link{% if page.url contains '/projects/' %} site-nav__link--active{% endif %}">
-    <span>Projects</span>
-  </a>
-  {% endif %}
+  {% assign nav_keys = site.data.nav | keys %}
+  {% for key in nav_keys %}
+    {% assign entry = site.data.nav[key] %}
+    {% if entry.items and entry.items.size > 0 %}
+      <div class="site-nav__dropdown" role="presentation" aria-label="{{ entry.label }}">
+        <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}">
+          <span>{{ entry.label }}</span>
+        </a>
+        <div class="dropdown-menu" role="menu" aria-label="{{ entry.label }} dropdown" style="display:none;">
+          {% for sub in entry.items %}
+            <a class="dropdown-item" href="{{ sub.url | relative_url }}" role="menuitem">{{ sub.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}">
+        <span>{{ entry.label }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
   {% include theme-toggle.html %}
 </nav>
