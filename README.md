@@ -1,3 +1,0 @@
-# alalunw.github.io
-
-test
