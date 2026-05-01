@@ -1,36 +1,38 @@
 (function () {
-  var STORAGE_KEY = 'tit-theme';
-  var DARK = 'dark';
-  var LIGHT = 'light';
+var STORAGE_KEY = 'tit-theme';
+var DARK = 'dark';
+var LIGHT = 'light';
 
-  function getSystemPreference() {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
-  }
+document.documentElement.className = document.documentElement.className.replace('no-js', '').trim();
 
-  function getStoredPreference() {
-    try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
-  }
+function getSystemPreference() {
+return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
+}
 
-  function applyTheme(theme) {
-    if (theme === DARK) {
-      document.documentElement.setAttribute('data-theme', DARK);
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-    }
-  }
+function getStoredPreference() {
+try { return localStorage.getItem(STORAGE_KEY); } catch (e) { return null; }
+}
 
-  applyTheme(getStoredPreference() || getSystemPreference());
+function applyTheme(theme) {
+if (theme === DARK) {
+document.documentElement.setAttribute('data-theme', DARK);
+} else {
+document.documentElement.removeAttribute('data-theme');
+}
+}
 
-  window.__toggleTheme = function () {
-    var current = document.documentElement.getAttribute('data-theme') === DARK ? DARK : LIGHT;
-    var next = current === DARK ? LIGHT : DARK;
-    applyTheme(next);
-    try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
-  };
+applyTheme(getStoredPreference() || getSystemPreference());
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-    if (!getStoredPreference()) applyTheme(e.matches ? DARK : LIGHT);
-  });
+window.__toggleTheme = function () {
+var current = document.documentElement.getAttribute('data-theme') === DARK ? DARK : LIGHT;
+var next = current === DARK ? LIGHT : DARK;
+applyTheme(next);
+try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+};
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+if (!getStoredPreference()) applyTheme(e.matches ? DARK : LIGHT);
+});
 })();
 
 (function () {
