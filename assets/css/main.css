@@ -16,7 +16,7 @@ z-index: var(--z-sticky);
 background-color: var(--c-overlay);
 backdrop-filter: blur(16px);
 -webkit-backdrop-filter: blur(16px);
-border-bottom: 1px solid var(--c-border);
+border-bottom: 1px solid transparent;
 transition: background-color var(--transition-theme), border-color var(--transition-theme);
 }
 
@@ -70,30 +70,30 @@ margin: 0 auto;
 }
 
 .site-nav__link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--c-accent);
-  transition: width var(--transition-base);
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: var(--c-accent);
+transition: width var(--transition-base);
 }
 
 .site-nav__link:hover {
-  color: var(--c-text);
+color: var(--c-text);
 }
 
 .site-nav__link:hover::after {
-  width: 100%;
+width: 100%;
 }
 
 .site-nav__link--active {
-  color: var(--c-text);
+color: var(--c-text);
 }
 
 .site-nav__link--active::after {
-  width: 100%;
+width: 100%;
 }
 
 /* Dropdown navigation (data-driven, accessible) */
