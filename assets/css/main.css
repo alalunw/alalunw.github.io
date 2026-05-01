@@ -16,8 +16,12 @@ z-index: var(--z-sticky);
 background-color: var(--c-overlay);
 backdrop-filter: blur(16px);
 -webkit-backdrop-filter: blur(16px);
-border-bottom: 1px solid transparent;
+border-bottom: 1px solid var(--c-border);
 transition: background-color var(--transition-theme), border-color var(--transition-theme);
+}
+
+.site-header__inner {
+position: relative;
 }
 
 /* Mobile header optimization - prevent horizontal overflow */
@@ -106,21 +110,21 @@ display: inline-block;
 display: none;
 position: absolute;
 left: 0;
-top: 100%;
-min-width: 160px;
+top: calc(100% + 8px);
+min-width: 180px;
 background: var(--c-surface);
 border: 1px solid var(--c-border);
 border-radius: var(--radius-md);
-padding: var(--space-xs) 0;
-z-index: calc(var(--z-dropdown) + 1);
-box-shadow: 0 4px 16px var(--c-shadow);
+padding: var(--space-sm) 0;
+z-index: calc(var(--z-dropdown) + 10);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 max-height: none;
 overflow-y: auto;
 }
 
 .site-nav__dropdown.open .dropdown-menu,
 .site-nav__dropdown:hover .dropdown-menu {
-  display: block;
+display: block;
 }
 
 .dropdown-item {
@@ -179,13 +183,15 @@ flex-shrink: 0; /* Prevent shrinking on mobile */
 
 /* --- Hero --- */
 .hero {
-display: grid;
-grid-template-columns: 1fr;
-gap: var(--space-lg);
-padding: var(--space-2xl) var(--space-md) var(--space-xl);
+display: block;
+padding: var(--space-3xl) var(--space-md) var(--space-2xl);
 max-width: var(--measure-wide);
 margin: 0 auto;
 position: relative;
+}
+
+.hero__content {
+max-width: 580px;
 }
 
 .hero-visual {
@@ -199,17 +205,16 @@ font-weight: 500;
 letter-spacing: 0.12em;
 text-transform: uppercase;
 color: var(--c-accent);
-margin-bottom: var(--space-sm);
+margin-bottom: var(--space-md);
 display: block;
 }
 
 .hero__title {
-font-size: clamp(2rem, 8vw, 3.5rem);
+font-size: clamp(2.2rem, 8vw, 4rem);
 font-weight: 800;
 line-height: var(--line-height-tight);
 letter-spacing: -0.03em;
-max-width: 14ch;
-margin-bottom: var(--space-md);
+margin-bottom: var(--space-lg);
 }
 
 .hero__title em {
@@ -220,16 +225,16 @@ color: var(--c-accent);
 .hero__subtitle {
 font-size: var(--text-base);
 color: var(--c-text-secondary);
-max-width: 42ch;
 line-height: var(--line-height-relaxed);
 font-weight: 300;
+max-width: 540px;
 }
 
 .hero__accent-line {
 width: 48px;
 height: 2px;
 background-color: var(--c-accent);
-margin-top: var(--space-lg);
+margin-top: var(--space-xl);
 }
 
 /* --- Content Area --- */

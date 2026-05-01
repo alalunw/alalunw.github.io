@@ -3,15 +3,17 @@ layout: default
 ---
 
 <section class="hero">
-  <span class="hero__overline animate-in animate-in--delay-1">Curated writing &amp; projects</span>
-  <h1 class="hero__title animate-in animate-in--delay-2">
-    Thoughts<br>in <em>Tremolo</em>
-  </h1>
-  <p class="hero__subtitle animate-in animate-in--delay-3">
-    {{ site.description }}
-  </p>
-  <div class="hero__accent-line animate-in animate-in--delay-4"></div>
-  </section>
+<div class="hero__content">
+<span class="hero__overline animate-in animate-in--delay-1">Digital collection</span>
+<h1 class="hero__title animate-in animate-in--delay-2">
+Thoughts<br>in <em>Tremolo</em>
+</h1>
+<p class="hero__subtitle animate-in animate-in--delay-3">
+A space for thoughts on music, books, history, and the details that matter. Exploring context, complexity, and clarity through writing and projects.
+</p>
+<div class="hero__accent-line animate-in animate-in--delay-4"></div>
+</div>
+</section>
 
   <div class="content-area">
   {% assign all_posts = site.posts | sort: date | reverse %}
