@@ -23,15 +23,16 @@ transition: background-color var(--transition-theme), border-color var(--transit
 /* Mobile header optimization - prevent horizontal overflow */
 .site-header__inner {
 overflow-x: auto;
+overflow-y: visible;
 }
 
 .site-header__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-md) var(--space-xl);
-  max-width: var(--measure-wide);
-  margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: var(--space-md) var(--space-xl);
+max-width: var(--measure-wide);
+margin: 0 auto;
 }
 
 .site-header__title {
@@ -106,14 +107,14 @@ display: none;
 position: absolute;
 left: 0;
 top: 100%;
-min-width: 140px;
+min-width: 160px;
 background: var(--c-surface);
 border: 1px solid var(--c-border);
 border-radius: var(--radius-md);
 padding: var(--space-xs) 0;
-z-index: var(--z-dropdown);
+z-index: calc(var(--z-dropdown) + 1);
 box-shadow: 0 4px 16px var(--c-shadow);
-max-height: 60vh;
+max-height: none;
 overflow-y: auto;
 }
 
