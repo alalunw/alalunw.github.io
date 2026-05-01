@@ -165,12 +165,14 @@ body {
 
 /* --- Typography Baseline --- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  line-height: var(--line-height-tight);
-  color: var(--c-text);
-  letter-spacing: -0.01em;
-  text-wrap: balance;
+font-family: var(--font-display);
+font-weight: 600;
+line-height: var(--line-height-tight);
+color: var(--c-text);
+letter-spacing: -0.01em;
+text-wrap: balance;
+overflow-wrap: break-word;
+word-wrap: break-word;
 }
 
 h1 {
@@ -193,9 +195,11 @@ h4 {
 }
 
 p {
-  max-width: var(--measure);
-  margin-bottom: var(--space-lg);
-  text-wrap: pretty;
+max-width: var(--measure);
+margin-bottom: var(--space-lg);
+text-wrap: pretty;
+overflow-wrap: break-word;
+word-wrap: break-word;
 }
 
 /* --- Element Baseline --- */
@@ -278,11 +282,17 @@ li {
   margin-bottom: var(--space-sm);
 }
 
+.table-wrapper {
+overflow-x: auto;
+-webkit-overflow-scrolling: touch;
+margin: var(--space-xl) 0;
+}
+
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: var(--space-xl) 0;
-  font-size: 0.95em;
+width: 100%;
+border-collapse: collapse;
+margin: var(--space-xl) 0;
+font-size: 0.95em;
 }
 
 th, td {

@@ -97,22 +97,24 @@ overflow-x: auto;
 
 /* Dropdown navigation (data-driven, accessible) */
 .site-nav__dropdown {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 .site-nav__dropdown .dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  min-width: 140px;
-  background: var(--c-surface);
-  border: 1px solid var(--c-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-xs) 0;
-  z-index: var(--z-dropdown);
-  box-shadow: 0 4px 16px var(--c-shadow);
+display: none;
+position: absolute;
+left: 0;
+top: 100%;
+min-width: 140px;
+background: var(--c-surface);
+border: 1px solid var(--c-border);
+border-radius: var(--radius-md);
+padding: var(--space-xs) 0;
+z-index: var(--z-dropdown);
+box-shadow: 0 4px 16px var(--c-shadow);
+max-height: 60vh;
+overflow-y: auto;
 }
 
 .site-nav__dropdown.open .dropdown-menu,
@@ -137,19 +139,20 @@ overflow-x: auto;
 
 /* --- Theme Toggle --- */
 .theme-toggle {
-  background: none;
-  border: 1px solid var(--c-border);
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--c-text-secondary);
-  transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
-  padding: 0;
-  line-height: 1;
+background: none;
+border: 1px solid var(--c-border);
+border-radius: 50%;
+width: 36px;
+height: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+color: var(--c-text-secondary);
+transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+padding: 0;
+line-height: 1;
+flex-shrink: 0; /* Prevent shrinking on mobile */
 }
 
 .theme-toggle:hover {
@@ -903,6 +906,11 @@ padding: var(--space-3xl) var(--space-xl);
 RESPONSIVE — Mobile (≤600px)
 ============================================================ */
 @media (max-width: 600px) {
+/* Prevent horizontal overflow */
+body {
+overflow-x: hidden;
+}
+
 /* Post feed - single column on mobile */
 .post-feed {
 grid-template-columns: 1fr;
@@ -1042,9 +1050,24 @@ padding: var(--space-2xl) var(--space-md);
 RESPONSIVE — Small Mobile (≤480px)
 ============================================================ */
 @media (max-width: 480px) {
-/* Navigation - show only icons */
+/* Navigation - show only icons, tighten spacing */
+.site-nav {
+gap: var(--space-sm);
+}
+
 .site-nav__link span {
 display: none;
+}
+
+/* Dropdown menu - mobile optimized */
+.site-nav__dropdown .dropdown-menu {
+position: fixed;
+left: var(--space-md);
+top: auto;
+bottom: 0;
+min-width: calc(100% - var(--space-2xl));
+max-width: 300px;
+border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 /* Hero section optimization */
