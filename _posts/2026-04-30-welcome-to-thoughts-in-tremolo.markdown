@@ -47,14 +47,6 @@ This blog lives in that space: between the music and the meaning, between the bo
 
 ---
 
-## About the Author
-
-I'm **Connor Hall**, a Birmingham-based writer, musician, and cultural observer. My work is deeply personal — I write about the music and books that shaped me, the city I call home, and the cultural forces that connect us all.
-
-When I'm not writing reviews, I'm creating music under the **Alalu** moniker — because criticism and creation are two sides of the same coin.
-
----
-
 ## What Makes This Blog Different
 
 1. **Depth Over Breadth**: No hot takes or listicles. Every post is a deep dive with research and context.
