@@ -16,6 +16,6 @@ You can find my work here: https://alalu.bandcamp.com/
 
 This blog is a place to document that mix—technical work, experiments, and thoughts on the media I spend time with, from books and history to films and music. The aim is simple: keep things clear, grounded, and worth reading without overcomplicating them.
 
-You can find my work across [GitHub](https://github.com/alalunw), follow along on [Twitter](https://twitter.com/alalunw), or reach out via email.
+Follow along on [Twitter](https://twitter.com/alalunw).
 
 
