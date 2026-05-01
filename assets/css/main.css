@@ -24,12 +24,6 @@ transition: background-color var(--transition-theme), border-color var(--transit
 position: relative;
 }
 
-/* Mobile header optimization - prevent horizontal overflow */
-.site-header__inner {
-overflow-x: auto;
-overflow-y: visible;
-}
-
 .site-header__inner {
 display: flex;
 align-items: center;
@@ -37,6 +31,7 @@ justify-content: space-between;
 padding: var(--space-md) var(--space-xl);
 max-width: var(--measure-wide);
 margin: 0 auto;
+overflow: visible;
 }
 
 .site-header__title {
