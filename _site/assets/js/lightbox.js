@@ -24,7 +24,7 @@
   }
   document.addEventListener('click', function(e){
     const t = e.target;
-    if (t && t.tagName === 'IMG' && !t.closest('.lightbox-overlay') && !t.hasAttribute('data-no-lightbox')){
+    if (t && t.tagName === 'IMG' && t.classList.contains('lightboxable') && !t.closest('.lightbox-overlay') && !t.hasAttribute('data-no-lightbox')){
       const src = t.currentSrc || t.src;
       const caption = t.alt || '';
       openLightbox(src, caption);

@@ -1,43 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-30T22:34:04+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Thoughts_In_Tremolo</title><subtitle>Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience.</subtitle><author><name>AlaluNW</name></author><entry><title type="html">Welcome to Thoughts In Tremolo</title><link href="http://localhost:4000/2026/04/30/welcome-to-thoughts-in-tremolo/" rel="alternate" type="text/html" title="Welcome to Thoughts In Tremolo" /><published>2026-04-30T15:00:00+01:00</published><updated>2026-04-30T15:00:00+01:00</updated><id>http://localhost:4000/2026/04/30/welcome-to-thoughts-in-tremolo</id><content type="html" xml:base="http://localhost:4000/2026/04/30/welcome-to-thoughts-in-tremolo/"><![CDATA[<p>Welcome to <strong>Thoughts In Tremolo</strong> — a space for exploring ideas at the intersection of technology, culture, and human experience.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://alalunw.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alalunw.github.io/" rel="alternate" type="text/html" /><updated>2026-05-01T10:53:54+01:00</updated><id>https://alalunw.github.io/feed.xml</id><title type="html">Thoughts_In_Tremolo</title><subtitle>Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience.</subtitle><author><name>AlaluNW</name></author><entry><title type="html">Welcome to Thoughts In Tremolo — Music Reviews, Book Reviews &amp;amp; Cultural Commentary</title><link href="https://alalunw.github.io/2026/04/30/welcome-to-thoughts-in-tremolo/" rel="alternate" type="text/html" title="Welcome to Thoughts In Tremolo — Music Reviews, Book Reviews &amp;amp; Cultural Commentary" /><published>2026-04-30T13:00:00+01:00</published><updated>2026-04-30T13:00:00+01:00</updated><id>https://alalunw.github.io/2026/04/30/welcome-to-thoughts-in-tremolo</id><content type="html" xml:base="https://alalunw.github.io/2026/04/30/welcome-to-thoughts-in-tremolo/"><![CDATA[<p>Welcome to <strong>Thoughts In Tremolo</strong> — a space dedicated to long-form music reviews, in-depth book reviews, and cultural commentary rooted in the belief that the art we consume shapes who we are.</p>
 
-<h2 id="what-to-expect">What to Expect</h2>
+<p>This isn’t a generic digital garden. This is a focused collection of passionate, research-driven writing about the music, books, and cultural moments that matter.</p>
 
-<p>This is a digital garden, not a traditional blog. Rather than chronological posts, think of this as a collection of evolving thoughts, projects, and essays. Some pieces here will be polished; others will be works in progress.</p>
+<hr />
 
-<h3 id="topics-ill-explore">Topics I’ll Explore</h3>
+<h2 id="what-youll-find-here">What You’ll Find Here</h2>
+
+<h3 id="music-reviews--deep-dives">Music Reviews &amp; Deep Dives</h3>
+<p>Heavy metal and rock aren’t just genres — they’re cultural phenomena. From Black Sabbath’s Birmingham roots to Ozzy Osbourne’s final bow, I write extensively about the music that defined generations:</p>
 
 <ul>
-  <li><strong>Technology &amp; Society</strong>: How digital tools shape human behavior and culture</li>
-  <li><strong>Design &amp; Aesthetics</strong>: The intersection of form and function in digital products</li>
-  <li><strong>Personal Projects</strong>: Experiments, prototypes, and creative coding</li>
-  <li><strong>Notes &amp; Observations</strong>: Half-formed thoughts and fleeting observations</li>
+  <li><strong>Concert Reviews</strong>: Live event analysis with cultural context (e.g., <a href="2025-08-24-Back-To-The-Beginning.md">“Back to the Beginning”</a> — Black Sabbath’s final reunion)</li>
+  <li><strong>Artist Tributes</strong>: Deep-dive essays on influential figures (e.g., <a href="2025-07-22-Ozzy-Osbourne.md">Ozzy Osbourne tribute</a>)</li>
+  <li><strong>Album Analysis</strong>: Track-by-track explorations and release documentation</li>
+  <li><strong>Cultural Impact</strong>: How music shapes identity, community, and place</li>
 </ul>
 
-<h2 id="design-philosophy">Design Philosophy</h2>
+<p><em>Music focus: Heavy metal, rock, progressive, and the Birmingham scene.</em></p>
 
-<p>The design of this space is intentionally minimal and refined. I believe that good design should:</p>
+<hr />
 
-<ol>
-  <li><strong>Disapear</strong> — Content should take center stage</li>
-  <li><strong>Adapt</strong> — Work seamlessly across devices and contexts</li>
-  <li><strong>Delight</strong> — Small moments of interaction should feel considered</li>
-</ol>
-
-<p>The typography uses <a href="https://fonts.google.com/specimen/Playfair+Display">Playfair Display</a> for headings (a distinctive serif with editorial qualities) paired with <a href="https://fonts.google.com/specimen/Source+Sans+Pro">Source Sans Pro</a> for body text (clean, readable, and versatile).</p>
-
-<h2 id="getting-in-touch">Getting in Touch</h2>
-
-<p>I’m always open to discussing new ideas, collaborations, or simply exchanging thoughts. You can reach me through:</p>
+<h3 id="book-reviews">Book Reviews</h3>
+<p>Non-fiction deep dives with historical rigor and critical analysis:</p>
 
 <ul>
-  <li><a href="https://github.com/alalunw">GitHub</a></li>
-  <li><a href="https://twitter.com/alalunw">Twitter</a></li>
-  <li>Email: connorhall96@gmail.com</li>
+  <li><strong>Historical Non-Fiction</strong>: WWII history, military history, and social history (e.g., <a href="2025-08-24-James-Holland-Review.md">James Holland’s “Victory ‘45”</a>)</li>
+  <li><strong>Cultural Studies</strong>: Books that examine music, identity, and working-class culture</li>
+  <li><strong>Long-Form Analysis</strong>: 2,000+ word reviews that go beyond plot summary</li>
+</ul>
+
+<p><em>Reading focus: History, cultural criticism, and music-related non-fiction.</em></p>
+
+<hr />
+
+<h3 id="cultural-commentary">Cultural Commentary</h3>
+<p>Essays that connect the dots between music, place, and identity:</p>
+
+<ul>
+  <li><strong>Birmingham &amp; The Black Country</strong>: Working-class creativity, industrial heritage, and cultural pride</li>
+  <li><strong>Music as Culture</strong>: How genres emerge from specific times, places, and social conditions</li>
+  <li><strong>Personal Reflection</strong>: What it means to be a fan, a critic, and a participant in culture</li>
 </ul>
 
 <hr />
 
-<p><em>This site is built with <a href="https://jekyllrb.com/">Jekyll</a> and designed with a commitment to clarity and thoughtful interaction.</em></p>]]></content><author><name>AlaluNW</name></author><category term="essay" /><summary type="html"><![CDATA[A brief introduction to this digital garden and what you can expect to find here.]]></summary></entry><entry><title type="html">A portion of my music releases…</title><link href="http://localhost:4000/2025/11/01/My-Music/" rel="alternate" type="text/html" title="A portion of my music releases…" /><published>2025-11-01T00:00:00+00:00</published><updated>2025-11-01T00:00:00+00:00</updated><id>http://localhost:4000/2025/11/01/My-Music</id><content type="html" xml:base="http://localhost:4000/2025/11/01/My-Music/"><![CDATA[<h1 id="introductions">Introductions…</h1>
+<h2 id="why-thoughts-in-tremolo">Why “Thoughts In Tremolo”?</h2>
+
+<p><em>Tremolo</em> — a musical term describing rapid repetition or oscillation. It’s the vibration between notes, the space where meaning emerges.</p>
+
+<p>This blog lives in that space: between the music and the meaning, between the book and the context, between the cultural moment and the lasting impact.</p>
+
+<hr />
+
+<h2 id="about-the-author">About the Author</h2>
+
+<p>I’m <strong>Connor Hall</strong>, a Birmingham-based writer, musician, and cultural observer. My work is deeply personal — I write about the music and books that shaped me, the city I call home, and the cultural forces that connect us all.</p>
+
+<p>When I’m not writing reviews, I’m creating music under the <strong>Alalu</strong> moniker — because criticism and creation are two sides of the same coin.</p>
+
+<hr />
+
+<h2 id="what-makes-this-blog-different">What Makes This Blog Different</h2>
+
+<ol>
+  <li>
+    <p><strong>Depth Over Breadth</strong>: No hot takes or listicles. Every post is a deep dive with research, context, and analysis.</p>
+  </li>
+  <li>
+    <p><strong>Personal Connection</strong>: I write about what I love, what I know, and what I’ve lived. This isn’t detached journalism — it’s passionate criticism.</p>
+  </li>
+  <li>
+    <p><strong>Birmingham Roots</strong>: This city invented heavy metal. It’s home to industrial innovation, working-class resilience, and cultural movements. That perspective shapes everything here.</p>
+  </li>
+  <li>
+    <p><strong>Long-Form Commitment</strong>: Expect 1,500–4,000+ word essays. Complex topics deserve thorough exploration.</p>
+  </li>
+  <li>
+    <p><strong>Research-Driven</strong>: Primary sources, historical context, and cultural analysis. This isn’t opinion — it’s informed criticism.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="navigation-guide">Navigation Guide</h2>
+
+<p><strong>Start Here:</strong></p>
+<ul>
+  <li><a href="2025-07-22-Ozzy-Osbourne.md">Ozzy Osbourne Tribute</a> — Reflections on the Prince of Darkness</li>
+  <li><a href="2025-08-24-Back-To-The-Beginning.md">Black Sabbath’s Final Reunion</a> — “Back to the Beginning” concert review</li>
+  <li><a href="2025-08-24-James-Holland-Review.md">Victory ‘45 Review</a> — James Holland’s WWII history analyzed</li>
+  <li><a href="2025-11-01-My-Music.md">Alalu Music</a> — My own musical releases and projects</li>
+</ul>
+
+<p><strong>Browse by Category:</strong></p>
+<ul>
+  <li>Music Reviews &amp; Tributes</li>
+  <li>Book Reviews</li>
+  <li>Cultural Commentary</li>
+  <li>Projects &amp; Media</li>
+</ul>
+
+<hr />
+
+<h2 id="a-note-on-format">A Note on Format</h2>
+
+<p>This site uses a refined, typography-first design optimized for long-form reading:</p>
+
+<ul>
+  <li><strong>Dark theme</strong> for comfortable extended reading</li>
+  <li><strong>Strong typographic hierarchy</strong> (Playfair Display for headings, Source Serif 4 for body)</li>
+  <li><strong>Lightbox image viewing</strong> for immersive visual experiences</li>
+  <li><strong>Responsive design</strong> that works across devices</li>
+</ul>
+
+<hr />
+
+<h2 id="whats-next">What’s Next</h2>
+
+<p>This blog is a living project. Expect regular updates as I:</p>
+
+<ul>
+  <li>Review new music releases and reissues</li>
+  <li>Analyze historical non-fiction and cultural criticism</li>
+  <li>Attend and review live events (especially in Birmingham and the UK)</li>
+  <li>Explore the intersection of music, place, and identity</li>
+</ul>
+
+<p><strong>Subscribe</strong> via RSS to stay updated. Follow the conversation. Dive deep.</p>
+
+<hr />
+
+<h2 id="welcome-to-the-journey">Welcome to the Journey</h2>
+
+<p>Thoughts In Tremolo is more than a blog — it’s a commitment to serious, passionate, research-driven criticism. Whether you’re here for the music, the books, or the cultural analysis, you’ll find writing that treats its subjects with the depth and respect they deserve.</p>
+
+<p>Pull up a chair. Turn up the volume. Let’s dive in.</p>
+
+<hr />
+
+<p><em>Last updated: April 30, 2026</em></p>
+
+<p><em>Featured image: Thoughts In Tremolo branding</em></p>]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="introduction" /><category term="music reviews" /><category term="book reviews" /><category term="cultural commentary" /><summary type="html"><![CDATA[Deep-dive reviews and cultural analysis from a Birmingham-based writer obsessed with music, books, and the stories that shape us.]]></summary></entry><entry><title type="html">A portion of my music releases…</title><link href="https://alalunw.github.io/2025/11/01/My-Music/" rel="alternate" type="text/html" title="A portion of my music releases…" /><published>2025-11-01T00:00:00+00:00</published><updated>2025-11-01T00:00:00+00:00</updated><id>https://alalunw.github.io/2025/11/01/My-Music</id><content type="html" xml:base="https://alalunw.github.io/2025/11/01/My-Music/"><![CDATA[<h1 id="introductions">Introductions…</h1>
 
 <p><strong>It’s worth noting…</strong> the following is a small collection of releases from 2016-2025. There is much more archived away via
 <a href="alalu.bandcamp.com">Alalu</a> 
@@ -251,7 +354,7 @@
   <li>Vaccine (Single)</li>
 </ul>
 
-<h2 id="listen-on-bandcamp-15"><a href="https://alalu.bandcamp.com/album/have-you-seen-god">Listen on Bandcamp</a></h2>]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="Alalu" /><category term="Music" /><summary type="html"><![CDATA[Introductions…]]></summary></entry><entry><title type="html">Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion</title><link href="http://localhost:4000/2025/08/24/Back-To-The-Beginning/" rel="alternate" type="text/html" title="Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion" /><published>2025-08-24T00:00:00+01:00</published><updated>2025-08-24T00:00:00+01:00</updated><id>http://localhost:4000/2025/08/24/Back-To-The-Beginning</id><content type="html" xml:base="http://localhost:4000/2025/08/24/Back-To-The-Beginning/"><![CDATA[<h1 id="reflecting-on-back-to-the-beginning-emotional-and-cultural-resonance-of-black-sabbaths-final-reunion">Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion</h1>
+<h2 id="listen-on-bandcamp-15"><a href="https://alalu.bandcamp.com/album/have-you-seen-god">Listen on Bandcamp</a></h2>]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="Alalu" /><category term="Music" /><summary type="html"><![CDATA[Introductions…]]></summary></entry><entry><title type="html">Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion</title><link href="https://alalunw.github.io/2025/08/24/Back-To-The-Beginning/" rel="alternate" type="text/html" title="Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion" /><published>2025-08-24T00:00:00+01:00</published><updated>2025-08-24T00:00:00+01:00</updated><id>https://alalunw.github.io/2025/08/24/Back-To-The-Beginning</id><content type="html" xml:base="https://alalunw.github.io/2025/08/24/Back-To-The-Beginning/"><![CDATA[<h1 id="reflecting-on-back-to-the-beginning-emotional-and-cultural-resonance-of-black-sabbaths-final-reunion">Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion</h1>
 
 <hr />
 
@@ -513,7 +616,7 @@
 
 <p>“Back to the Beginning” did more than bid goodbye; it reaffirmed the living, beating heart of a culture Black Sabbath helped create—one that will echo down the years as new generations pick up the riffs and keep moving forward, always aware of where it began.</p>
 
-<hr />]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="Black Sabbath" /><category term="Music" /><category term="Metal" /><summary type="html"><![CDATA[Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion]]></summary></entry><entry><title type="html">Book: Victory ‘45: The End of the War in Eight Surrenders – A Review</title><link href="http://localhost:4000/2025/08/24/James-Holland-Review/" rel="alternate" type="text/html" title="Book: Victory ‘45: The End of the War in Eight Surrenders – A Review" /><published>2025-08-24T00:00:00+01:00</published><updated>2025-08-24T00:00:00+01:00</updated><id>http://localhost:4000/2025/08/24/James-Holland-Review</id><content type="html" xml:base="http://localhost:4000/2025/08/24/James-Holland-Review/"><![CDATA[<h1 id="victory-45-the-end-of-the-war-in-eight-surrenders--a-comprehensive-review">Victory ‘45: The End of the War in Eight Surrenders – A Comprehensive Review</h1>
+<hr />]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="Black Sabbath" /><category term="Music" /><category term="Metal" /><summary type="html"><![CDATA[Reflecting on ‘Back to the Beginning’: Emotional and Cultural Resonance of Black Sabbath’s Final Reunion]]></summary></entry><entry><title type="html">Book: Victory ‘45: The End of the War in Eight Surrenders – A Review</title><link href="https://alalunw.github.io/2025/08/24/James-Holland-Review/" rel="alternate" type="text/html" title="Book: Victory ‘45: The End of the War in Eight Surrenders – A Review" /><published>2025-08-24T00:00:00+01:00</published><updated>2025-08-24T00:00:00+01:00</updated><id>https://alalunw.github.io/2025/08/24/James-Holland-Review</id><content type="html" xml:base="https://alalunw.github.io/2025/08/24/James-Holland-Review/"><![CDATA[<h1 id="victory-45-the-end-of-the-war-in-eight-surrenders--a-comprehensive-review">Victory ‘45: The End of the War in Eight Surrenders – A Comprehensive Review</h1>
 
 <hr />
 
@@ -684,7 +787,7 @@
 
 <p>If its only significant limitation is the necessity of selectivity—a limit all narrative syntheses must embrace—the book’s strengths far outweigh such concerns. In comparison with Holland’s prior output, <em>Victory ‘45</em> holds its own as a creative and impactful entry, offering something both new and necessary.</p>
 
-<p>For readers—whether casual or specialist—seeking <em>a nuanced, vivid, and moving account of how the Second World War truly ended</em>, <em>Victory ‘45</em> is as essential as it is timely.</p>]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="James Holland" /><category term="History" /><summary type="html"><![CDATA[Victory ‘45: The End of the War in Eight Surrenders – A Comprehensive Review]]></summary></entry><entry><title type="html">Ozzy Osbourne, a tribute to the Prince of Darkness</title><link href="http://localhost:4000/2025/07/22/Ozzy-Osbourne/" rel="alternate" type="text/html" title="Ozzy Osbourne, a tribute to the Prince of Darkness" /><published>2025-07-22T00:00:00+01:00</published><updated>2025-07-22T00:00:00+01:00</updated><id>http://localhost:4000/2025/07/22/Ozzy-Osbourne</id><content type="html" xml:base="http://localhost:4000/2025/07/22/Ozzy-Osbourne/"><![CDATA[<h2 id="lifeforce">Lifeforce</h2>
+<p>For readers—whether casual or specialist—seeking <em>a nuanced, vivid, and moving account of how the Second World War truly ended</em>, <em>Victory ‘45</em> is as essential as it is timely.</p>]]></content><author><name>Connor Hall</name></author><category term="essay" /><category term="James Holland" /><category term="History" /><summary type="html"><![CDATA[Victory ‘45: The End of the War in Eight Surrenders – A Comprehensive Review]]></summary></entry><entry><title type="html">Ozzy Osbourne, a tribute to the Prince of Darkness</title><link href="https://alalunw.github.io/2025/07/22/Ozzy-Osbourne/" rel="alternate" type="text/html" title="Ozzy Osbourne, a tribute to the Prince of Darkness" /><published>2025-07-22T00:00:00+01:00</published><updated>2025-07-22T00:00:00+01:00</updated><id>https://alalunw.github.io/2025/07/22/Ozzy-Osbourne</id><content type="html" xml:base="https://alalunw.github.io/2025/07/22/Ozzy-Osbourne/"><![CDATA[<h2 id="lifeforce">Lifeforce</h2>
 
 <h3 id="in-the-late-1960s-black-sabbath-created-a-genre---heavy-metal---and-the-world-was-never-the-same-again">In the late 1960s, Black Sabbath created a genre - HEAVY METAL - and the world was never the same again.</h3>
 
