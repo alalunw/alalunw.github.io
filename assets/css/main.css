@@ -151,13 +151,14 @@ align-self: center;
 }
 
 .hero-visual {
-display: none;
+display: block;
+margin-top: var(--space-xl);
 }
 
 .hero-visual img {
 width: 100%;
 height: auto;
-max-height: 400px;
+max-height: 300px;
 object-fit: contain;
 border-radius: var(--radius-lg);
 }
@@ -976,10 +977,10 @@ max-width: none;
 }
 
 .hero-visual {
-display: block;
 grid-column: 2;
 align-self: center;
 width: 100%;
+margin-top: 0;
 }
 
 .hero-visual img {
