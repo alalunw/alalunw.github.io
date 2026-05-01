@@ -1,20 +1,11 @@
 writing:
   label: Writing
   url: "/"
-  items:
-  - label: All Posts
-    url: "/"
-  - label: Projects
-    url: "/projects/"
 
 spotify_playlists:
   label: Spotify Playlists
   url: "/spotify-playlists/"
-  button: true
 
 about:
   label: About
   url: "/about/"
-  items:
-  - label: Bio
-    url: "/about/#bio"
