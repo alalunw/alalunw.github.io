@@ -11,35 +11,9 @@ layout: default
     {{ site.description }}
   </p>
   <div class="hero__accent-line animate-in animate-in--delay-4"></div>
-</section>
+  </section>
 
-<!-- Visual artwork removed to avoid duplication; hero text stands alone -->
-<script>
- // Lightweight image lightbox (inline)
- (function(){
-  function openLightbox(src){
-    const overlay = document.createElement('div');
-    overlay.style.position='fixed'; overlay.style.inset='0'; overlay.style.background='rgba(0,0,0,.92)';
-    overlay.style.display='flex'; overlay.style.alignItems='center'; overlay.style.justifyContent='center';
-    overlay.style.zIndex='9999';
-    const img = document.createElement('img');
-    img.src = src;
-    img.style.maxWidth='90vw'; img.style.maxHeight='85vh'; img.style.objectFit='contain';
-    overlay.appendChild(img);
-    overlay.addEventListener('click', (e)=>{ if(e.target===overlay) document.body.removeChild(overlay); });
-    window.addEventListener('keydown', (ev)=>{ if(ev.key==='Escape') document.body.removeChild(overlay); });
-    document.body.appendChild(overlay);
-  }
-  document.addEventListener('click', (e)=>{
-    const t = e.target;
-    if(t && t.tagName==='IMG' && !t.closest('.lightbox-overlay')){
-      openLightbox(t.currentSrc||t.src);
-    }
-  }, true);
-})();
-</script>
-
-<div class="content-area">
+  <div class="content-area">
   {% assign all_posts = site.posts | sort: date | reverse %}
   {% if all_posts.size > 0 %}
   <div class="post-feed">

@@ -2,24 +2,17 @@ writing:
   label: Writing
   url: "/"
   items:
-    - label: All Posts
-      url: "/"
-    - label: Essays
-      url: "/about/#essay"
-    - label: Media
-      url: "/about/#media"
-    - label: Projects
-      url: "/projects/"
-    - label: Spotify Playlists
-      url: "/spotify-playlists/"
-
-about_me:
-  label: About Me
-  url: "/about/#bio"
-  button: true
+  - label: All Posts
+    url: "/"
+  - label: Essays
+    url: "/about/#essay"
+  - label: Media
+    url: "/about/#media"
+  - label: Projects
+    url: "/projects/"
 
 spotify_playlists:
-  label: Playlists
+  label: Spotify Playlists
   url: "/spotify-playlists/"
   button: true
 
@@ -27,7 +20,7 @@ about:
   label: About
   url: "/about/"
   items:
-    - label: Bio
-      url: "/about/#bio"
-    - label: Resume
-      url: "/about/#resume"
+  - label: Bio
+    url: "/about/#bio"
+  - label: Resume
+    url: "/about/#resume"
