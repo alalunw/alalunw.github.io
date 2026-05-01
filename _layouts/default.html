@@ -3,7 +3,8 @@
 <head>
 <script>
 (function(){var t=localStorage.getItem('tit-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
-document.documentElement.className = document.documentElement.className.replace('no-js', '');
+document.documentElement.classList.remove('no-js');
+document.body.classList.remove('no-js');
 </script>
 {% include head-seo.html %}
 {% seo %}

@@ -732,7 +732,9 @@ transform: translateY(0);
 transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.no-js .reveal {
+.no-js .reveal,
+html.no-js .reveal,
+body.no-js .reveal {
 opacity: 0;
 transform: translateY(20px);
 }
