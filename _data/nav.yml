@@ -4,10 +4,6 @@ writing:
   items:
   - label: All Posts
     url: "/"
-  - label: Essays
-    url: "/about/#essay"
-  - label: Media
-    url: "/about/#media"
   - label: Projects
     url: "/projects/"
 
@@ -22,5 +18,3 @@ about:
   items:
   - label: Bio
     url: "/about/#bio"
-  - label: Resume
-    url: "/about/#resume"
