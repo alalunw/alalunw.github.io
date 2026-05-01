@@ -1,22 +1,19 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
-  {% assign nav_keys = site.data.nav | keys %}
-  {% for key in nav_keys %}
+  {% for key in site.data.nav %}
     {% assign entry = site.data.nav[key] %}
     {% if entry.items and entry.items.size > 0 %}
       <div class="site-nav__dropdown" role="presentation" aria-label="{{ entry.label }}">
-        <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}">
-          <span>{{ entry.label }}</span>
-        </a>
+        <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}"><span>{{ entry.label }}</span></a>
         <div class="dropdown-menu" role="menu" aria-label="{{ entry.label }} dropdown" style="display:none;">
           {% for sub in entry.items %}
-            <a class="dropdown-item" href="{{ sub.url | relative_url }}" role="menuitem">{{ sub.label }}</a>
+          <a class="dropdown-item" href="{{ sub.url | relative_url }}" role="menuitem">{{ sub.label }}</a>
           {% endfor %}
         </div>
       </div>
+    {% elsif entry.button %}
+      <a href="{{ entry.url | relative_url }}" class="site-nav__link site-nav__button" aria-label="{{ entry.label }}"><span>{{ entry.label }}</span></a>
     {% else %}
-      <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}">
-        <span>{{ entry.label }}</span>
-      </a>
+      <a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}"><span>{{ entry.label }}</span></a>
     {% endif %}
   {% endfor %}
   {% include theme-toggle.html %}
