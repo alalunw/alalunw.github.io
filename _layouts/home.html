@@ -60,11 +60,9 @@ layout: default
         </div>
       {% assign img_path = post.image | default: post.cover-img | default: post.thumbnail-img %}
       <div class="post-card__image">
-      {% if img_path %}
+        {% if img_path %}
         <img class="lightboxable" src="{{ img_path | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
-      {% else %}
-        <img class="lightboxable" src="{{ '/assets/img/tit.png' | relative_url }}" alt="Post image" loading="lazy">
-      {% endif %}
+        {% endif %}
       </div>
       </article>
       {% else %}
