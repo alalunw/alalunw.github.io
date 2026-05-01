@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Welcome to Thoughts In Tremolo — Music Reviews, Book Reviews & Cultural Commentary"
-subtitle: Long-form writing on heavy metal, historical non-fiction, and the culture that shapes us
+title: "Welcome to Thoughts In Tremolo — Music Reviews, Book Reviews & Projects"
+subtitle: Long-form writing on heavy metal, historical non-fiction, and personal projects
 date: 2026-04-30 12:00:00 +0000
 categories: [editorial, welcome]
-tags: [introduction, music reviews, book reviews, cultural commentary]
+tags: [introduction, music reviews, book reviews, projects]
 thumbnail-img: /assets/img/tit.png
 cover-img: /assets/img/tit.png
-excerpt: "Deep-dive reviews and cultural analysis from a Birmingham-based writer obsessed with music, books, and the stories that shape us."
+excerpt: "Reviews and deep-dives from a Birmingham-based writer and musician obsessed with music, books, and building things."
 author: Connor Hall
 ---
 
-Welcome to **Thoughts In Tremolo** — a space dedicated to long-form music reviews, in-depth book reviews, and cultural commentary rooted in the belief that the art we consume shapes who we are.
+Welcome to **Thoughts In Tremolo** — a space dedicated to long-form music reviews, in-depth book reviews, and personal projects.
 
-This isn't a generic digital garden. This is a focused collection of passionate, research-driven writing about the music, books, and cultural moments that matter.
+This isn't a generic digital garden. This is a focused collection of passionate, research-driven writing about the music and books that matter, along with documentation of my own creative and technical work.
 
 ---
 
@@ -25,8 +25,6 @@ Heavy metal and rock aren't just genres — they're cultural phenomena. From Bla
 - **Concert Reviews**: Live event analysis with cultural context (e.g., ["Back to the Beginning"](2025-08-24-Back-To-The-Beginning.md) — Black Sabbath's final reunion)
 - **Artist Tributes**: Deep-dive essays on influential figures (e.g., [Ozzy Osbourne tribute](2025-07-22-Ozzy-Osbourne.md))
 - **Album Analysis**: Track-by-track explorations and release documentation
-- **Cultural Impact**: How music shapes identity, community, and place
-
 *Music focus: Heavy metal, rock, progressive, and the Birmingham scene.*
 
 ---
@@ -35,27 +33,17 @@ Heavy metal and rock aren't just genres — they're cultural phenomena. From Bla
 Non-fiction deep dives with historical rigor and critical analysis:
 
 - **Historical Non-Fiction**: WWII history, military history, and social history (e.g., [James Holland's "Victory '45"](2025-08-24-James-Holland-Review.md))
-- **Cultural Studies**: Books that examine music, identity, and working-class culture
 - **Long-Form Analysis**: 2,000+ word reviews that go beyond plot summary
 
-*Reading focus: History, cultural criticism, and music-related non-fiction.*
-
----
-
-### Cultural Commentary
-Essays that connect the dots between music, place, and identity:
-
-- **Birmingham & The Black Country**: Working-class creativity, industrial heritage, and cultural pride
-- **Music as Culture**: How genres emerge from specific times, places, and social conditions
-- **Personal Reflection**: What it means to be a fan, a critic, and a participant in culture
+*Reading focus: History and music-related non-fiction.*
 
 ---
 
 ## Why "Thoughts In Tremolo"?
 
-*Tremolo* — a musical term describing rapid repetition or oscillation. It's the vibration between notes, the space where meaning emerges. 
+*Tremolo* — a musical term describing rapid repetition or oscillation. It's the vibration between notes, the space where meaning emerges.
 
-This blog lives in that space: between the music and the meaning, between the book and the context, between the cultural moment and the lasting impact.
+This blog lives in that space: between the music and the meaning, between the book and the context. It's also where I document my own creative work and technical projects.
 
 ---
 
@@ -69,15 +57,15 @@ When I'm not writing reviews, I'm creating music under the **Alalu** moniker —
 
 ## What Makes This Blog Different
 
-1. **Depth Over Breadth**: No hot takes or listicles. Every post is a deep dive with research, context, and analysis.
+1. **Depth Over Breadth**: No hot takes or listicles. Every post is a deep dive with research and context.
 
-2. **Personal Connection**: I write about what I love, what I know, and what I've lived. This isn't detached journalism — it's passionate criticism.
+2. **Personal Connection**: I write about what I love and what I've lived. This is passionate, firsthand writing.
 
-3. **Birmingham Roots**: This city invented heavy metal. It's home to industrial innovation, working-class resilience, and cultural movements. That perspective shapes everything here.
+3. **Birmingham Roots**: This city invented heavy metal. It's home to industrial innovation and working-class resilience. That perspective shapes everything here.
 
 4. **Long-Form Commitment**: Expect 1,500–4,000+ word essays. Complex topics deserve thorough exploration.
 
-5. **Research-Driven**: Primary sources, historical context, and cultural analysis. This isn't opinion — it's informed criticism.
+5. **Research-Driven**: Historical context and careful analysis. This is informed criticism, not just opinion.
 
 ---
 
@@ -92,7 +80,6 @@ When I'm not writing reviews, I'm creating music under the **Alalu** moniker —
 **Browse by Category:**
 - Music Reviews & Tributes
 - Book Reviews
-- Cultural Commentary
 - Projects & Media
 
 ---
@@ -113,17 +100,17 @@ This site uses a refined, typography-first design optimized for long-form readin
 This blog is a living project. Expect regular updates as I:
 
 - Review new music releases and reissues
-- Analyze historical non-fiction and cultural criticism
+- Analyze historical non-fiction
 - Attend and review live events (especially in Birmingham and the UK)
-- Explore the intersection of music, place, and identity
+- Document my own music production and technical projects
 
-**Subscribe** via RSS to stay updated. Follow the conversation. Dive deep.
+**Subscribe** via RSS to stay updated.
 
 ---
 
 ## Welcome to the Journey
 
-Thoughts In Tremolo is more than a blog — it's a commitment to serious, passionate, research-driven criticism. Whether you're here for the music, the books, or the cultural analysis, you'll find writing that treats its subjects with the depth and respect they deserve.
+Thoughts In Tremolo is more than a blog — it's a place for serious, passionate writing about music and books, plus documentation of my own creative work. Whether you're here for the reviews or the projects, you'll find writing that treats its subjects with depth and respect.
 
 Pull up a chair. Turn up the volume. Let's dive in.
 
