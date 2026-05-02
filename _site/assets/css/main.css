@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 <script>
-(function(){var t=localStorage.getItem('tit-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+(function(){
+var t=localStorage.getItem('tit-theme');
+if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+document.documentElement.setAttribute('data-theme','dark')
+}
 document.documentElement.classList.remove('no-js');
-document.body.classList.remove('no-js');
+if(document.body){document.body.classList.remove('no-js')}
+})();
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +42,7 @@ document.body.classList.remove('no-js');
 <script src="/assets/js/theme.js" defer></script>
 <script src="/assets/js/lightbox.js" defer></script>
 </head>
-<body class="no-js">
+<body>
   <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="site-header" role="banner">
   <div class="site-header__inner">
@@ -215,7 +220,9 @@ flex-shrink: 0; /* Prevent shrinking on mobile */
 
 /* --- Hero --- */
 .hero {
-display: block;
+display: grid;
+grid-template-columns: 1fr;
+gap: var(--space-xl);
 padding: var(--space-3xl) var(--space-md) var(--space-2xl);
 max-width: var(--measure-wide);
 margin: 0 auto;
@@ -224,10 +231,20 @@ position: relative;
 
 .hero__content {
 max-width: 580px;
+align-self: center;
 }
 
 .hero-visual {
-display: none;
+display: block;
+margin-top: var(--space-xl);
+}
+
+.hero-visual img {
+width: 100%;
+height: auto;
+max-height: 300px;
+object-fit: contain;
+border-radius: var(--radius-lg);
 }
 
 .hero__overline {
@@ -811,9 +828,7 @@ transform: translateY(0);
 transition: opacity var(--transition-slow), transform var(--transition-slow);
 }
 
-.no-js .reveal,
-html.no-js .reveal,
-body.no-js .reveal {
+.no-js .reveal {
 opacity: 0;
 transform: translateY(20px);
 }
@@ -1041,19 +1056,23 @@ gap: var(--space-2xl);
 padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
 }
 
-  .hero-visual {
-    display: block;
-    grid-column: 2;
-    align-self: center;
-    width: 100%;
-  }
+.hero__content {
+max-width: none;
+}
 
-  .hero-visual img {
-    width: 100%;
-    height: auto;
-    max-height: 560px;
-    object-fit: cover;
-  }
+.hero-visual {
+grid-column: 2;
+align-self: center;
+width: 100%;
+margin-top: 0;
+}
+
+.hero-visual img {
+width: 100%;
+height: auto;
+max-height: 560px;
+object-fit: contain;
+}
 
   .hero__title {
     font-size: clamp(2.8rem, 7vw, 5rem);
@@ -1077,17 +1096,21 @@ padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
    RESPONSIVE — Wide Desktop (≥1100px)
    ============================================================ */
 @media (min-width: 1100px) {
-  .hero {
-    grid-template-columns: 58% 42%;
-  }
+.hero {
+grid-template-columns: 58% 42%;
+}
 
-  .hero__title {
-    font-size: clamp(2.6rem, 6vw, 4rem);
-  }
+.hero-visual img {
+max-height: 640px;
+}
 
-  .hero__subtitle {
-    font-size: 1rem;
-  }
+.hero__title {
+font-size: clamp(2.6rem, 6vw, 4rem);
+}
+
+.hero__subtitle {
+font-size: 1rem;
+}
 }
 
 /* ============================================================

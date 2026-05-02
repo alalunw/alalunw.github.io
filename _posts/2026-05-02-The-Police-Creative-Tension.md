@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Prada Suit Made of Barbed Wire: Creative Tension as Engine and Collapse in The Police"
+title: "The Prada Suit Made of Barbed Wire: Creative Implosions within The Police"
 subtitle: How three brilliant musicians forged the world's biggest band—and destroyed it from the inside
 cover-img: /assets/img/thepolice_1.jpg
 thumbnail-img: /assets/img/thepolice_2.jpg
