@@ -2,9 +2,9 @@
 layout: post
 title: "The Prada Suit Made of Barbed Wire: Creative Implosions within The Police"
 subtitle: How three brilliant musicians forged the world's biggest band—and destroyed it from the inside
-cover-img: /assets/img/thepolice_1.jpg
-thumbnail-img: /assets/img/thepolice_2.jpg
-share-img: /assets/img/thepolice_1.jpg
+cover-img: /assets/img/thepolice_3.jpg
+thumbnail-img: /assets/img/thepolice_3.jpg
+share-img: /assets/img/thepolice_3.jpg
 tags: [The Police, Sting, Stewart Copeland, Andy Summers, Synchronicity, Creative Tension, Rock History, 1980s]
 author: Connor Hall
 ---
