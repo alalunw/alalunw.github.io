@@ -38,15 +38,11 @@ transition: background-color var(--transition-theme), border-color var(--transit
 
 /* Mobile-friendly header nav: allow horizontal scroll so items are visible */
 @media (max-width: 700px) {
-  .site-header__inner { overflow-x: auto; white-space: nowrap; }
-  .playlist-subnav { overflow-x: auto; white-space: nowrap; }
-  .playlist-subnav a.playlist-subnav__item { display: inline-block; padding: 0.5rem 1rem; }
-  .playlist-subnav a.playlist-subnav__item--primary { display: inline-block; }
-}
-
-/* Remove duplicate All Time Favourites card from Annual (header-driven) on all viewports */
-@media (min-width: 0px) {
-  #annual-favourites > .playlist-grid > .playlist-card:first-child { display: none; }
+.site-header__inner { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+.site-nav { flex-shrink: 0; }
+.playlist-subnav { overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; }
+.playlist-subnav a.playlist-subnav__item { display: inline-block; padding: 0.5rem 1rem; }
+.playlist-subnav a.playlist-subnav__item--primary { display: inline-block; }
 }
 
 /* Improve in-page anchor navigation with scroll offset for fixed header */
@@ -54,8 +50,6 @@ html {
   scroll-padding-top: 90px;
 }
 
-/* Hide duplicate All Time Favourites card inside Annual Favourites block to avoid content duplication in header-driven layout */
-#annual-favourites .playlist-grid .playlist-card--annual-alltime-hide { display: none; }
 .playlist-subnav a.playlist-subnav__item {
   color: var(--c-text-secondary);
   text-decoration: none;
@@ -1321,14 +1315,22 @@ font-size: 1rem;
 RESPONSIVE — Small Mobile (≤480px)
 ============================================================ */
 @media (max-width: 480px) {
-/* Navigation - show only icons, tighten spacing */
-.site-nav {
-gap: var(--space-sm);
-}
+/* Navigation - keep text visible on small screens, allow horizontal scroll */
+  .site-nav {
+    gap: var(--space-sm);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    flex-shrink: 0;
+  }
 
-.site-nav__link span {
-display: none;
-}
+  .site-nav__link span {
+    display: inline;
+    font-size: 0.75rem;
+  }
+
+  .site-header__inner {
+    flex-wrap: nowrap;
+  }
 
 /* Hero section optimization */
 .hero__title {
@@ -1407,5 +1409,4 @@ padding: var(--space-2xl) var(--space-md);
 gap: var(--space-md);
 }
 }
-/* Hide the All Time Favourites card inside Annual Favourites to avoid duplication in header-driven layout */
-#annual-favourites .playlist-card--annual-alltime-hide { display: none; }
+
