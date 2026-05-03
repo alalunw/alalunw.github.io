@@ -165,7 +165,7 @@ The ongoing lawsuit over "Every Breath You Take" royalties is, in its own way, t
 
 The Police's brilliance is inseparable from their dysfunction. This is not a romanticisation of suffering or a justification of cruelty. It is an observation about the specific nature of collaborative creativity: that the most interesting art often emerges from conditions of disagreement, resistance, and constraint, and that the removal of those conditions — through harmony, through compromise, through the peaceful resolution of difference — can also remove whatever made the art extraordinary.
 
-Stewart Copeland called it a Prada suit made of barbed wire. You could add: it was the most beautiful garment in the world, and it drew blood every time you wore it, and nothing else ever fit as well, and you could not wear it forever.
+End.
 
 ---
 
