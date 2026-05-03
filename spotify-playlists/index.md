@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 
+<!-- All Time Favourites - top (primary in header) -->
+<a href="#all-time-favourites" class="playlist-subnav__item playlist-subnav__item--primary" style="font-weight:800;">All Time Favourites</a>
+
+<!-- Hidden anchor for All Time Favourites section (header target) -->
+<div id="all-time-favourites" aria-hidden="true" style="position:absolute; left:-9999px; top:0; width:1px; height:1px; overflow:hidden;"></div>
+
 <!-- Interactive Subnav for subsections -->
 <div class="playlist-subnav" id="playlist-subnav" role="navigation" aria-label="Playlist categories">
   <a href="#sessions" class="playlist-subnav__item">Sessions</a>
@@ -44,17 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
   <a href="#annual-favourites" class="playlist-subnav__item">Annual Favourites</a>
 </div>
 
-<!-- All Time Favourites - top (independent) -->
-<div id="all-time-favourites-top" class="playlist-section">
-  <div class="playlist-card" style="margin:0 0 var(--space-md);">
-    <div class="playlist-card__icon">⭐</div>
-    <h3 class="playlist-card__title" style="margin:0 0 var(--space-sm);">All Time Favourites</h3>
-    <a href="https://open.spotify.com/playlist/3rD2dmHEJmAK9onDYsWvh3?si=500ba3b9448140a5" class="playlist-card__link" style="display:inline-flex; align-items:center;">
-      Listen on Spotify
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>
-  </div>
-</div>
+<!-- All Time Favourites (moved into header as primary) -->
 
 <!-- Sessions Section -->
 <div id="sessions" class="playlist-section">
@@ -66,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function(){
   
   
   
-  <div class="playlist-card">
+  <div class="playlist-card playlist-card--annual-alltime-hide">
     <div class="playlist-card__icon">🌊</div>
     <h3 class="playlist-card__title">Chicago House vs Detroit Techno</h3>
     <a href="https://open.spotify.com/playlist/2kG2yZjqM6VOvdLAJTaf2u?si=d3e359a323554de4" class="playlist-card__link">
