@@ -11,6 +11,30 @@ I'm a bit particular about how my Spotify music library operates, so I thought t
 This is a hub for all the Spotify playlists I'm curating and maintaining! A mix of my favourites from any particular year, Live tracks, spotlighting particular artists, and some genre-related playlists.
 </div>
 
+<!-- Lightweight JS for smooth offset scrolling with fixed header -->
+<script>
+(function(){
+  function headerHeight(){
+    var h = 0;
+    var header = document.querySelector('.site-header');
+    if(header){ h = header.offsetHeight; }
+    return h;
+  }
+  var links = document.querySelectorAll('.playlist-subnav a');
+  links.forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = this.getAttribute('href');
+      if(!href || href.charAt(0) !== '#') return;
+      var target = document.querySelector(href);
+      if(!target) return;
+      e.preventDefault();
+      var y = window.pageYOffset + target.getBoundingClientRect().top - headerHeight() - 8;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+
 <!-- Interactive Subnav for subsections -->
 <div class="playlist-subnav" id="playlist-subnav" role="navigation" aria-label="Playlist categories">
   <a href="#sessions" class="playlist-subnav__item">Sessions</a>
@@ -211,9 +235,10 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
 </div>
 
 <!-- Live Favourites Section -->
-<div class="playlist-section">
+<div id="live-favourites" class="playlist-section">
   <h2 class="playlist-section__title">Live Favourites</h2>
-</div>
+  </div>
+ 
 
 <div class="playlist-grid">
   <div class="playlist-card playlist-card--featured">
@@ -227,7 +252,7 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
 </div>
 
 <!-- Genres Section -->
-<div class="playlist-section">
+<div id="genres" class="playlist-section">
   <h2 class="playlist-section__title">Genres</h2>
 </div>
 
@@ -315,7 +340,7 @@ Listen on Spotify
 </div>
 
 <!-- Annual Favourites Section -->
-<div class="playlist-section">
+<div id="annual-favourites" class="playlist-section">
 <h2 class="playlist-section__title">Annual Favourites</h2>
 </div>
 
