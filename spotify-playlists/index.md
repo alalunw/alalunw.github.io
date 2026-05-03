@@ -13,7 +13,7 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
 
 <!-- Lightweight JS for smooth offset scrolling with fixed header -->
 <script>
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
   function headerHeight(){
     var h = 0;
     var header = document.querySelector('.site-header');
@@ -32,7 +32,7 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
       window.scrollTo({ top: y, behavior: 'smooth' });
     });
   });
-})();
+});
 </script>
 
 <!-- Interactive Subnav for subsections -->
@@ -42,6 +42,18 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
   <a href="#live-favourites" class="playlist-subnav__item">Live Favourites</a>
   <a href="#genres" class="playlist-subnav__item">Genres</a>
   <a href="#annual-favourites" class="playlist-subnav__item">Annual Favourites</a>
+</div>
+
+<!-- All Time Favourites - top (independent) -->
+<div id="all-time-favourites-top" class="playlist-section">
+  <div class="playlist-card" style="margin:0 0 var(--space-md);">
+    <div class="playlist-card__icon">⭐</div>
+    <h3 class="playlist-card__title" style="margin:0 0 var(--space-sm);">All Time Favourites</h3>
+    <a href="https://open.spotify.com/playlist/3rD2dmHEJmAK9onDYsWvh3?si=500ba3b9448140a5" class="playlist-card__link" style="display:inline-flex; align-items:center;">
+      Listen on Spotify
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
 </div>
 
 <!-- Sessions Section -->
