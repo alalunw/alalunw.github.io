@@ -53,6 +53,9 @@ transition: background-color var(--transition-theme), border-color var(--transit
 html {
   scroll-padding-top: 90px;
 }
+
+/* Hide duplicate All Time Favourites card inside Annual Favourites block to avoid content duplication in header-driven layout */
+#annual-favourites .playlist-grid .playlist-card--annual-alltime-hide { display: none; }
 .playlist-subnav a.playlist-subnav__item {
   color: var(--c-text-secondary);
   text-decoration: none;
