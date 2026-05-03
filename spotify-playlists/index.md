@@ -11,13 +11,25 @@ I'm a bit particular about how my Spotify music library operates, so I thought t
 This is a hub for all the Spotify playlists I'm curating and maintaining! A mix of my favourites from any particular year, Live tracks, spotlighting particular artists, and some genre-related playlists.
 </div>
 
+<!-- Interactive Subnav for subsections -->
+<div class="playlist-subnav" id="playlist-subnav" role="navigation" aria-label="Playlist categories">
+  <a href="#sessions" class="playlist-subnav__item">Sessions</a>
+  <a href="#spotlight" class="playlist-subnav__item">Spotlight</a>
+  <a href="#live-favourites" class="playlist-subnav__item">Live Favourites</a>
+  <a href="#genres" class="playlist-subnav__item">Genres</a>
+  <a href="#annual-favourites" class="playlist-subnav__item">Annual Favourites</a>
+</div>
+
 <!-- Sessions Section -->
-<div class="playlist-section">
+<div id="sessions" class="playlist-section">
   <h2 class="playlist-section__title">Sessions</h2>
   <p class="playlist-section__description">These are journeys into a particular genre, mood, time period etc...</p>
 </div>
 
 <div class="playlist-grid">
+  
+  
+  
   <div class="playlist-card">
     <div class="playlist-card__icon">🌊</div>
     <h3 class="playlist-card__title">Chicago House vs Detroit Techno</h3>
@@ -56,7 +68,7 @@ This is a hub for all the Spotify playlists I'm curating and maintaining! A mix 
 </div>
 
 <!-- Spotlight Section -->
-<div class="playlist-section">
+<div id="spotlight" class="playlist-section">
   <h2 class="playlist-section__title">Spotlight</h2>
   <p class="playlist-section__description">These are focused on spotlighting my favourite musicians</p>
 </div>
@@ -306,6 +318,15 @@ Listen on Spotify
 <div class="playlist-section">
 <h2 class="playlist-section__title">Annual Favourites</h2>
 </div>
+
+  <div class="playlist-card">
+    <div class="playlist-card__icon">⭐</div>
+    <h3 class="playlist-card__title">2026 Favourites</h3>
+    <a href="https://open.spotify.com/playlist/1mkmXZxsKG0s2DwlG1yk7D" class="playlist-card__link">
+      Listen on Spotify
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
 
 <div class="playlist-grid">
 <div class="playlist-card">

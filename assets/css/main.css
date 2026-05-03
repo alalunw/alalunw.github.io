@@ -18,8 +18,29 @@ backdrop-filter: blur(16px);
 -webkit-backdrop-filter: blur(16px);
 border-bottom: 1px solid var(--c-border);
 transition: background-color var(--transition-theme), border-color var(--transition-theme);
-}
+} 
 
+/* Interactive subnav for Spotify playlists (header tabs) */
+.playlist-subnav {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--c-border);
+  background: var(--c-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.playlist-subnav a.playlist-subnav__item {
+  color: var(--c-text-secondary);
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+.playlist-subnav a.playlist-subnav__item:hover {
+  color: var(--c-text);
+  background: var(--c-bg-secondary);
+}
 .site-header__inner {
 position: relative;
 }
