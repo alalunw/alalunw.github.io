@@ -2,9 +2,9 @@
 layout: post
 title: "Book: Victory '45: The End of the War in Eight Surrenders – A Review"
 subtitle: Just finished this fascinating audiobook, and wanted to share some thoughts
-cover-img: /assets/img/james_holland.png
-thumbnail-img: /assets/img/endofwar.jpg
-share-img: /assets/img/james_holland.png
+cover-img: /assets/img/posts/james-holland/james_holland.png
+thumbnail-img: /assets/img/posts/james-holland/endofwar.jpg
+share-img: /assets/img/posts/james-holland/james_holland.png
 tags: [James Holland, History]
 author: Connor Hall
 ---

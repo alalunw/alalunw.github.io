@@ -2,9 +2,9 @@
 layout: post
 title: "Every Man for Himself and God Against All: A Memoir - A Review"
 subtitle: Werner Herzog narrates his own extraordinary life, and it's unlike anything you've ever heard
-cover-img: /assets/img/werner_herzog.jpg
-thumbnail-img: /assets/img/werner_herzog.jpg
-share-img: /assets/img/werner_herzog.jpg
+cover-img: /assets/img/posts/herzog/werner_herzog.jpg
+thumbnail-img: /assets/img/posts/herzog/werner_herzog.jpg
+share-img: /assets/img/posts/herzog/werner_herzog.jpg
 tags: [Werner Herzog, Memoir, Audiobook, Film]
 author: Connor Hall
 ---
@@ -15,7 +15,7 @@ author: Connor Hall
 
 ## Introduction
 
-![Werner Herzog](/assets/img/herzog-portrait.jpg)
+![Werner Herzog](/assets/img/posts/herzog/herzog-portrait.jpg)
 *Werner Herzog - legendary filmmaker, documentarian, and now memoirist*
 
 There are voices you recognize, and then there's *the* voice—that unmistakable, gravel-toned Bavarian baritone that has narrated some of the most haunting documentaries ever made, that has guided audiences through the jungles of the Amazon and the frozen wastes of Antarctica, that has whispered observations about the absurdity and wonder of human existence. So when I heard Werner Herzog himself narrated his memoir *Every Man for Himself and God Against All*, I knew this wasn't just another audiobook. This was Herzog, unfiltered, telling his own story in his own words, in that voice that could make a grocery list sound like a philosophical treatise.

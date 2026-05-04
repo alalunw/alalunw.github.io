@@ -2,9 +2,9 @@
 layout: post
 title: "Ozzy Osbourne, a tribute to the Prince of Darkness"
 subtitle: Some initial, shocked thoughts upon the passing of Ozzy Osbourne
-cover-img: /assets/img/ozzy.jpg
-thumbnail-img: /assets/img/ozzy.jpg
-share-img: /assets/img/ozzy.jpg
+cover-img: /assets/img/posts/ozzy/ozzy.jpg
+thumbnail-img: /assets/img/posts/ozzy/ozzy.jpg
+share-img: /assets/img/posts/ozzy/ozzy.jpg
 tags: [Ozzy Osbourne, Music, Metal]
 author: Connor Hall
 ---

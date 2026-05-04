@@ -5,8 +5,8 @@ subtitle: Long-form writing on heavy metal, historical non-fiction, and personal
 date: 2026-04-30 12:00:00 +0000
 categories: [editorial, welcome]
 tags: [introduction, music reviews, book reviews, projects]
-thumbnail-img: /assets/img/tit.png
-cover-img: /assets/img/tit.png
+thumbnail-img: /assets/img/brand/tit.png
+cover-img: /assets/img/brand/tit.png
 excerpt: "Reviews and deep-dives from a English-based writer and musician obsessed with music, books, and building things."
 author: Connor Hall
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: "Reflecting on 'Back to the Beginning': Emotional and Cultural Resonance of Black Sabbath’s Final Reunion"
 subtitle: Bittersweet & triumph - revisiting and reviewing the 'Back to the Beginning' show
-cover-img: /assets/img/bttb.jpg
-tumbnail-img: /assets/img/bttb_2.jpg
+cover-img: /assets/img/posts/bttb/bttb.jpg
+thumbnail-img: /assets/img/bttb_2.jpg
 share-img: /assets/img/bttb.png
 tags: [Black Sabbath, Music, Metal]
 author: Connor Hall

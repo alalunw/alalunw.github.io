@@ -2,16 +2,16 @@
 layout: post
 title: "The Prada Suit Made of Barbed Wire: Creative Implosions within The Police"
 subtitle: How three brilliant musicians forged the world's biggest band—and destroyed it from the inside
-cover-img: /assets/img/thepolice_3.jpg
-thumbnail-img: /assets/img/thepolice_3.jpg
-share-img: /assets/img/thepolice_3.jpg
+cover-img: /assets/img/posts/the-police/thepolice_3.jpg
+thumbnail-img: /assets/img/posts/the-police/thepolice_3.jpg
+share-img: /assets/img/posts/the-police/thepolice_3.jpg
 tags: [The Police, Sting, Stewart Copeland, Andy Summers, Synchronicity, Creative Tension, Rock History, 1980s]
 author: Connor Hall
 ---
 
 # The Prada Suit Made of Barbed Wire
 
-![The Police](/assets/img/thepolice_2.jpg)
+![The Police](/assets/img/posts/the-police/thepolice_2.jpg)
 
 I came late to The Police. Not late in the way that matters — the music doesn't expire — but late in the way that means you discover them sideways, through fragments and echoes rather than the full force of cultural moment. What pulled me in wasn't "Every Breath You Take" or "Roxanne," songs so embedded in the culture they'd become almost invisible through familiarity. It was *Synchronicity I* — that ferocious, tumbling opener with its piledriver rhythm and Sting howling about "connecting spheres and synchronous machines" like a man who'd found the equation for the universe and was furious about it. Then *Driven to Tears*, with its jagged guitar figure and Copeland's hi-hat splintering the groove into something nervous and alive. *Demolition Man*, all swagger and stretched-out funk. *Spirits in the Material World*, where the bass line does the work of an entire orchestra and the lyrics read like a theological pamphlet written at 3 a.m.
 
@@ -23,7 +23,7 @@ This is the story of that suit — and the three men who bled into it.
 
 ## I. Montserrat, 1982: The Volcano and the Vacuum
 
-![AIR Studios Montserrat](/assets/img/thepolice_1.jpg)
+![AIR Studios Montserrat](/assets/img/posts/the-police/thepolice_1.jpg)
 
 George Martin's AIR Studios sat on the Caribbean island of Montserrat like a postcard from paradise. Palm trees, turquoise water, volcanic peaks rising green against the sky. In December 1982, the three members of the Police arrived there to record their fifth album. They were, by any measure, the biggest rock band on the planet. *Ghost in the Machine* had been a commercial juggernaut. A gruelling hundred-night world tour had cemented their status. Expectations for the follow-up were enormous.
 
