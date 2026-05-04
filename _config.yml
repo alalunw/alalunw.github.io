@@ -9,6 +9,10 @@ description: >-
 baseurl: ""
 url: "https://alalunw.github.io"
 
+# Explicitly include static assets that Jekyll might otherwise skip
+include:
+  - assets/img/posts/unit-731
+
 # Author
 author:
   name: AlaluNW
