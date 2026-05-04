@@ -1,8 +1,13 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
-{% assign nav_items = site.data.nav | sort %}
+{% assign nav_items = site.data.nav | sort: "order" %}
 {% for item in nav_items %}
-{% assign entry = item[1] %}
-<a href="{{ entry.url | relative_url }}" class="site-nav__link" aria-label="{{ entry.label }}"><span>{{ entry.label }}</span></a>
+{% assign is_active = false %}
+{% if item.url == "/" %}
+{% if page.url == "/" %}{% assign is_active = true %}{% endif %}
+{% else %}
+{% if page.url contains item.url %}{% assign is_active = true %}{% endif %}
+{% endif %}
+<a href="{{ item.url | relative_url }}" class="site-nav__link{% if is_active %} site-nav__link--active{% endif %}" aria-label="{{ item.label }}"><span>{{ item.label }}</span></a>
 {% endfor %}
 {% include theme-toggle.html %}
 </nav>

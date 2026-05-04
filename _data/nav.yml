@@ -1,11 +1,11 @@
-writing:
-  label: Writing
+- label: Writing
   url: "/"
+  order: 1
 
-spotify_playlists:
-  label: Spotify Playlists
+- label: Spotify Playlists
   url: "/spotify-playlists/"
+  order: 2
 
-about:
-  label: About
+- label: About
   url: "/about/"
+  order: 3
