@@ -61,7 +61,7 @@ body {
 :root {
   /* Typography */
   --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Courier Prime', 'Courier New', monospace;
   --font-mono: 'JetBrains Mono', Consolas, monospace;
 
   /* Line Heights (typographic scale) */

@@ -1,7 +1,7 @@
----
----
+
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('base.css');
 
 /* ============================================================
@@ -9,7 +9,7 @@
    Depends on base.css for reset, tokens, and element baseline
    ============================================================ */
 
-/* --- Site Header --- */
+/*  Site Header  */
 .site-header {
 position: sticky;
 top: 0;
@@ -100,7 +100,7 @@ overflow: visible;
   color: var(--c-accent);
 }
 
-/* --- Navigation --- */
+/*  Navigation  */
 .site-nav {
   display: flex;
   align-items: center;
@@ -144,7 +144,7 @@ color: var(--c-text);
 width: 100%;
 }
 
-/* --- Theme Toggle --- */
+/*  Theme Toggle  */
 .theme-toggle {
 background: none;
 border: 1px solid var(--c-border);
@@ -183,7 +183,7 @@ flex-shrink: 0; /* Prevent shrinking on mobile */
 :not([data-theme="dark"]) > .theme-toggle__icon--sun { display: none; }
 :not([data-theme="dark"]) > .theme-toggle__icon--moon { display: block; }
 
-/* --- Hero --- */
+/*  Hero  */
 .hero {
 display: grid;
 grid-template-columns: 1fr;
@@ -251,14 +251,14 @@ background-color: var(--c-accent);
 margin-top: var(--space-xl);
 }
 
-/* --- Content Area --- */
+/*  Content Area  */
 .content-area {
   max-width: var(--measure-wide);
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
 
-/* --- Post Feed --- */
+/*  Post Feed  */
 .post-feed {
   display: grid;
   grid-template-columns: 1fr;
@@ -456,7 +456,7 @@ hyphens: auto;
   background-color: var(--c-border);
 }
 
-/* --- Post Layout --- */
+/*  Post Layout  */
 .post-layout {
   max-width: var(--measure-wide);
   margin: 0 auto;
@@ -519,7 +519,7 @@ hyphens: auto;
   object-fit: contain;
 }
 
-/* --- Post Content --- */
+/*  Post Content  */
 .post-content {
   max-width: var(--measure);
   margin: 0 auto;
@@ -635,7 +635,7 @@ hyphens: auto;
   object-fit: contain;
 }
 
-/* --- Post Navigation --- */
+/*  Post Navigation  */
 .post-nav {
   display: grid;
   grid-template-columns: 1fr;
@@ -679,7 +679,7 @@ hyphens: auto;
   text-align: right;
 }
 
-/* --- Page Layout --- */
+/*  Page Layout  */
 .page-layout {
   max-width: var(--measure-wide);
   margin: 0 auto;
@@ -1017,7 +1017,7 @@ PLAYlists PAGE - Enhanced Visual Design
   color: var(--c-bg);
 }
 
-/* --- Reading Progress Bar --- */
+/*  Reading Progress Bar  */
 .reading-progress {
   position: fixed;
   top: 0;
@@ -1083,7 +1083,7 @@ transform: translateY(0);
   animation: slideInLeft 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
-/* --- Site Footer --- */
+/*  Site Footer  */
 .site-footer {
   border-top: 1px solid var(--c-border);
   padding: var(--space-3xl) var(--space-md);
