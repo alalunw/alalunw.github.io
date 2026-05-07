@@ -17,8 +17,8 @@ Most men his age were retired, enjoying grandchildren and quiet evenings. Billy 
 
 Waugh's career spanned more than fifty years—through Korea, Vietnam, and Afghanistan, across sixty-four countries, in operations both declared and denied. He conducted the first combat HALO (High Altitude, Low Opening) parachute jump in military history. He tracked Osama bin Laden through the streets of Khartoum. He was shot in the head and left for dead in a Vietnamese rice paddy. He helped capture Carlos the Jackal. And at Tora Bora, he came within thirty meters of bin Laden—close enough, as he later said, "to have killed him with a rock."
 
-<img src="/assets/img/posts/billy_waugh_the_godfather/billy-1.jpg" class="lightboxable" alt="Billy Waugh with ODA 594 in Afghanistan, 2001">
-*Billy Waugh (left, indicated by arrow) with ODA 594 in Afghanistan, 2001. At 71, Waugh was the oldest operator on the ground during Operation Enduring Freedom.*
+<img src="/assets/img/posts/billy_waugh_the_godfather/billy-3.jpg" class="lightboxable" alt="ODA 594 team photo Afghanistan 2001">
+*ODA 594 team in Afghanistan, 2001. Billy Waugh (left, indicated by arrow in original) with the team. At 71, Waugh was the oldest operator on the ground during Operation Enduring Freedom.*
 
 His story is not just one man's biography. It is the story of American special operations itself—from the birth of the Green Berets in the 1950s through the Global War on Terror. It is a story of patriotism, sacrifice, and the moral ambiguities that come with fighting in the shadows. And it raises uncomfortable questions about the methods used in America's secret wars, and the toll they take on those who wage them.
 
@@ -38,8 +38,8 @@ The attempt failed, but the ambition did not fade. Waugh threw himself into high
 
 He attended Airborne School in December 1948, becoming a paratrooper with the 82nd Airborne at Fort Bragg, North Carolina. But Waugh wanted combat. In 1951, he re-enlisted specifically to get an assignment with the 187th Airborne Regimental Combat Team (the "Rakkasans"), which was then fighting in Korea.
 
-<img src="/assets/img/posts/billy_waugh_the_godfather/Billy_2.jpg" class="lightboxable" alt="Billy Waugh in military service">
-*Billy Waugh during his military career. Waugh earned eight Purple Hearts, a Silver Star, four Bronze Stars, and numerous other decorations across five decades of service.*
+<img src="/assets/img/posts/billy_waugh_the_godfather/Billy_2.jpg" class="lightboxable" alt="Billy Waugh 1971">
+*Billy Waugh in 1971, during his MACV-SOG era. This was around the time he conducted the first combat HALO jumps in military history.*
 
 The Korean War taught Waugh what combat was about. "I learned what made men tick," he later wrote. "I learned what combat was all about." But it was after Korea, while stationed in Germany, that Waugh's career took its decisive turn.
 
@@ -137,8 +137,8 @@ On September 11, 2001, Waugh was 71 years old. Most men would have retired decad
 
 He was assigned to ODA 594—Operational Detachment Alpha 594—a combined CIA and Special Forces unit tasked with hunting Taliban and al-Qaeda fighters. In November 2001, Waugh deployed to Afghanistan as part of the Northern Alliance Liaison Team led by Gary Schroen.
 
-<img src="/assets/img/posts/billy_waugh_the_godfather/billy-3.jpg" class="lightboxable" alt="ODA 594 team photo Afghanistan 2001">
-*ODA 594 in Afghanistan, 2001. Waugh is in the front row with the team's sign. This was Waugh's final operational deployment, capping a 50-year career in special operations.*
+<img src="/assets/img/posts/billy_waugh_the_godfather/billy-1.jpg" class="lightboxable" alt="Billy Waugh portrait">
+*Billy Waugh in his Green Beret. Waugh served for over 50 years in Special Forces and the CIA, from Korea to Afghanistan.*
 
 The deployment was brutal. Each operator carried 110 pounds of equipment through mountainous terrain in freezing temperatures. They kicked in doors, conducted raids, and gathered intelligence. Waugh was at the Battle of Tora Bora, where bin Laden narrowly escaped capture.
 
@@ -182,7 +182,7 @@ But his story also raises uncomfortable questions about the nature of American p
 
 Waugh never fully retired. He worked as a mentor, lecturer, and contractor, passing on his knowledge to younger operators. He published two books: *Hunting the Jackal* (2005), his autobiography, and contributions to *Surprise, Kill, Vanish* (2019), Annie Jacobsen's history of CIA paramilitary operations.
 
-<img src="/assets/img/posts/billy_waugh_the_godfather/Billy_2.jpg" class="lightboxable" alt="Billy Waugh portrait">
+<img src="/assets/img/posts/billy_waugh_the_godfather/Billy_2.jpg" class="lightboxable" alt="Billy Waugh 1971">
 *Billy Waugh (1929-2023). "You've been in my life for so long I'll work at that job until I join you."*
 
 He died on April 4, 2023, at the age of 93. His passing was confirmed by 1st Special Forces Command, which called him a "true warrior" who had "inspired a generation of special operations."
