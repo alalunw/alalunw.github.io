@@ -11,20 +11,23 @@
   var utterance = null;
   var isPlaying = false;
   var currentText = '';
+  var totalWords = 0;
+  var currentWordIndex = 0;
+  var startTime = null;
+  var estimatedDuration = 0;
+  
   var player = document.querySelector('[data-speech-player]');
-  var toggle = document.querySelector('[data-speech-toggle]');
-  var controls = document.querySelector('[data-speech-controls]');
   var playBtn = document.querySelector('[data-speech-play]');
-  var pauseBtn = document.querySelector('[data-speech-pause]');
+  var progressEl = document.querySelector('[data-speech-progress]');
+  var timeEl = document.querySelector('[data-speech-time]');
+  var durationEl = document.querySelector('[data-speech-duration]');
   var speedSelect = document.querySelector('[data-speech-speed]');
   var volumeSlider = document.querySelector('[data-speech-volume]');
-  var statusEl = document.querySelector('[data-speech-status]');
 
   function getPostText() {
     var text = '';
     var header = document.querySelector('.post-header');
     var content = document.querySelector('.post-content');
-    
     var title, meta, paragraphs, i;
     
     if (header) {
@@ -39,54 +42,74 @@
       paragraphs = content.querySelectorAll('p, h2, h3, h4, h5, h6, li, blockquote');
       for (i = 0; i < paragraphs.length; i++) {
         var t = paragraphs[i].textContent.trim();
-        if (t) text += t + '. ';
+        if (t) text += t + ' ';
       }
     }
     
     return text;
   }
 
-  function toggleControls() {
-    var hidden = controls.hasAttribute('hidden');
-    if (hidden) {
-      controls.removeAttribute('hidden');
-      toggle.classList.add('speech-player__toggle--active');
-    } else {
-      controls.setAttribute('hidden', '');
-      toggle.classList.remove('speech-player__toggle--active');
+  function countWords(text) {
+    return text.trim().split(/\s+/).length;
+  }
+
+  function formatTime(seconds) {
+    var mins = Math.floor(seconds / 60);
+    var secs = Math.floor(seconds % 60);
+    return mins + ':' + (secs < 10 ? '0' : '') + secs;
+  }
+
+  function updateProgress() {
+    if (totalWords === 0) return;
+    var percent = (currentWordIndex / totalWords) * 100;
+    progressEl.style.width = percent + '%';
+    
+    if (startTime && estimatedDuration > 0) {
+      var elapsed = (Date.now() - startTime) / 1000;
+      var adjustedElapsed = elapsed * (parseFloat(speedSelect.value) || 1);
+      timeEl.textContent = formatTime(adjustedElapsed);
     }
   }
 
   function play() {
     if (isPlaying) return;
-    
     currentText = getPostText();
-    if (!currentText) {
-      updateStatus('No text');
-      return;
-    }
+    if (!currentText) return;
+    
+    totalWords = countWords(currentText);
+    currentWordIndex = 0;
+    startTime = Date.now();
+    estimatedDuration = (totalWords / 150) * 60;
+    
+    durationEl.textContent = formatTime(estimatedDuration);
     
     utterance = new SpeechSynthesisUtterance(currentText);
     utterance.rate = parseFloat(speedSelect.value) || 1;
     utterance.volume = parseFloat(volumeSlider.value) || 1;
+    
+    utterance.onboundary = function(event) {
+      if (event.name === 'word') {
+        currentWordIndex = event.charIndex;
+        updateProgress();
+      }
+    };
+    
     utterance.onstart = function() {
       isPlaying = true;
-      playBtn.setAttribute('hidden', '');
-      pauseBtn.removeAttribute('hidden');
-      updateStatus('Playing');
+      playBtn.setAttribute('aria-label', 'Pause');
+      startTime = Date.now();
     };
+    
     utterance.onend = function() {
       isPlaying = false;
-      pauseBtn.setAttribute('hidden', '');
-      playBtn.removeAttribute('hidden');
-      updateStatus('');
+      playBtn.setAttribute('aria-label', 'Play');
+      progressEl.style.width = '100%';
     };
+    
     utterance.onerror = function(e) {
-      isPlaying = false;
-      pauseBtn.setAttribute('hidden', '');
-      playBtn.removeAttribute('hidden');
       if (e.error !== 'canceled') {
-        updateStatus(`Error: ${e.error}`);
+        isPlaying = false;
+        playBtn.setAttribute('aria-label', 'Play');
       }
     };
     
@@ -97,47 +120,43 @@
     if (!isPlaying) return;
     synth.pause();
     isPlaying = false;
-    pauseBtn.setAttribute('hidden', '');
-    playBtn.removeAttribute('hidden');
-    updateStatus('Paused');
+    playBtn.setAttribute('aria-label', 'Play');
   }
 
   function resume() {
-    if (isPlaying || !utterance) return;
-    synth.resume();
-    isPlaying = true;
-    playBtn.setAttribute('hidden', '');
-    pauseBtn.removeAttribute('hidden');
-    updateStatus('Playing');
+    if (!isPlaying) {
+      synth.resume();
+      isPlaying = true;
+      playBtn.setAttribute('aria-label', 'Pause');
+    }
+  }
+
+  function toggle() {
+    var isPaused = playBtn.getAttribute('aria-label') === 'Play';
+    if (isPaused) {
+      if (synth.paused) {
+        resume();
+      } else {
+        play();
+      }
+    } else {
+      pause();
+    }
   }
 
   function stop() {
     synth.cancel();
     isPlaying = false;
-    if (pauseBtn) pauseBtn.setAttribute('hidden', '');
-    if (playBtn) playBtn.removeAttribute('hidden');
-    updateStatus('');
+    playBtn.setAttribute('aria-label', 'Play');
+    progressEl.style.width = '0%';
+    timeEl.textContent = '0:00';
   }
 
-  function updateStatus(msg) {
-    if (statusEl) statusEl.textContent = msg;
-  }
-
-  if (toggle) toggle.addEventListener('click', toggleControls);
-  
-  if (playBtn) playBtn.addEventListener('click', function() {
-    if (synth.paused) {
-      resume();
-    } else {
-      play();
-    }
-  });
-  
-  if (pauseBtn) pauseBtn.addEventListener('click', pause);
+  playBtn.addEventListener('click', toggle);
   
   if (speedSelect) {
     speedSelect.addEventListener('change', function() {
-      if (utterance && isPlaying) {
+      if (isPlaying) {
         stop();
         play();
       }
