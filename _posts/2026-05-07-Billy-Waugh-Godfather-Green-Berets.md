@@ -182,8 +182,8 @@ But his story also raises uncomfortable questions about the nature of American p
 
 Waugh never fully retired. He worked as a mentor, lecturer, and contractor, passing on his knowledge to younger operators. He published two books: *Hunting the Jackal* (2005), his autobiography, and contributions to *Surprise, Kill, Vanish* (2019), Annie Jacobsen's history of CIA paramilitary operations.
 
-<img src="/assets/img/posts/billy_waugh_the_godfather/Billy_2.jpg" class="lightboxable" alt="Billy Waugh 1971">
-*Billy Waugh (1929-2023). "You've been in my life for so long I'll work at that job until I join you."*
+<img src="/assets/img/posts/billy_waugh_the_godfather/billy_4.jpg" class="lightboxable" alt="Billy Waugh in later years">
+*Billy Waugh in his later years. The legendary operator died on April 4, 2023, at the age of 93. "You've been in my life for so long I'll work at that job until I join you."*
 
 He died on April 4, 2023, at the age of 93. His passing was confirmed by 1st Special Forces Command, which called him a "true warrior" who had "inspired a generation of special operations."
 
