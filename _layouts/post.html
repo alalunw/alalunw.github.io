@@ -26,6 +26,9 @@ layout: default
   </div>
   </header>
 
+  {% include speech-player.html %}
+  <script src="{{ '/assets/js/speech-player.js' | relative_url }}" defer></script>
+
   {% if page.category == 'project' and page.project_meta %}
   <div class="post-content">
     <div class="project-meta reveal">

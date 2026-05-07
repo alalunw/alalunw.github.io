@@ -1402,5 +1402,126 @@ padding: var(--space-2xl) var(--space-md);
 .site-footer__inner {
 gap: var(--space-md);
 }
+
+/* Speech Player */
+.speech-player {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--c-bg-secondary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--c-border);
+}
+
+.speech-player__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: transparent;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  color: var(--c-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.speech-player__toggle:hover {
+  color: var(--c-text);
+  border-color: var(--c-border-strong);
+}
+
+.speech-player__toggle--active {
+  color: var(--c-accent);
+  border-color: var(--c-accent);
+  background: var(--c-accent-subtle);
+}
+
+.speech-player__icon {
+  flex-shrink: 0;
+}
+
+.speech-player__label {
+  white-space: nowrap;
+}
+
+.speech-player__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.speech-player__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: var(--c-accent);
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--c-bg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.speech-player__btn:hover {
+  background: var(--c-accent-hover);
+}
+
+.speech-player__btn-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.speech-player__speed {
+  display: flex;
+  align-items: center;
+}
+
+.speech-player__speed-select {
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  color: var(--c-text);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+}
+
+.speech-player__speed-select:hover {
+  border-color: var(--c-border-strong);
+}
+
+.speech-player__speed-select:focus {
+  outline: none;
+  border-color: var(--c-accent);
+}
+
+.speech-player__status {
+  font-size: var(--text-xs);
+  color: var(--c-text-tertiary);
+  min-width: 60px;
+}
+
+@media (max-width: 500px) {
+  .speech-player {
+    flex-wrap: wrap;
+  }
+  
+  .speech-player__controls {
+    width: 100%;
+    justify-content: center;
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--c-border);
+  }
+}
 }
 
