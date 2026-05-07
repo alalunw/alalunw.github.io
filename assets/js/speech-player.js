@@ -11,13 +11,13 @@
   var utterance = null;
   var isPlaying = false;
   var currentText = '';
-
   var player = document.querySelector('[data-speech-player]');
   var toggle = document.querySelector('[data-speech-toggle]');
   var controls = document.querySelector('[data-speech-controls]');
   var playBtn = document.querySelector('[data-speech-play]');
   var pauseBtn = document.querySelector('[data-speech-pause]');
   var speedSelect = document.querySelector('[data-speech-speed]');
+  var volumeSlider = document.querySelector('[data-speech-volume]');
   var statusEl = document.querySelector('[data-speech-status]');
 
   function getPostText() {
@@ -25,20 +25,22 @@
     var header = document.querySelector('.post-header');
     var content = document.querySelector('.post-content');
     
+    var title, meta, paragraphs, i;
+    
     if (header) {
-      var title = header.querySelector('.post-header__title');
+      title = header.querySelector('.post-header__title');
       if (title) text += title.textContent.trim() + '. ';
       
-      var meta = header.querySelector('.post-header__meta');
+      meta = header.querySelector('.post-header__meta');
       if (meta) text += meta.textContent.trim() + '. ';
     }
     
     if (content) {
-      var paragraphs = content.querySelectorAll('p, h2, h3, h4, h5, h6, li, blockquote');
-      paragraphs.forEach(function(el) {
-        var t = el.textContent.trim();
+      paragraphs = content.querySelectorAll('p, h2, h3, h4, h5, h6, li, blockquote');
+      for (i = 0; i < paragraphs.length; i++) {
+        var t = paragraphs[i].textContent.trim();
         if (t) text += t + '. ';
-      });
+      }
     }
     
     return text;
@@ -60,12 +62,13 @@
     
     currentText = getPostText();
     if (!currentText) {
-      updateStatus('No text available');
+      updateStatus('No text');
       return;
     }
     
     utterance = new SpeechSynthesisUtterance(currentText);
     utterance.rate = parseFloat(speedSelect.value) || 1;
+    utterance.volume = parseFloat(volumeSlider.value) || 1;
     utterance.onstart = function() {
       isPlaying = true;
       playBtn.setAttribute('hidden', '');
@@ -83,7 +86,7 @@
       pauseBtn.setAttribute('hidden', '');
       playBtn.removeAttribute('hidden');
       if (e.error !== 'canceled') {
-        updateStatus('Error: ' + e.error);
+        updateStatus(`Error: ${e.error}`);
       }
     };
     
@@ -137,6 +140,14 @@
       if (utterance && isPlaying) {
         stop();
         play();
+      }
+    });
+  }
+
+  if (volumeSlider) {
+    volumeSlider.addEventListener('input', function() {
+      if (utterance && isPlaying) {
+        utterance.volume = parseFloat(volumeSlider.value);
       }
     });
   }
