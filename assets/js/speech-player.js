@@ -156,17 +156,18 @@
   
   if (speedSelect) {
     speedSelect.addEventListener('change', function() {
-      if (isPlaying) {
+      if (isPlaying || synth.paused) {
         stop();
-        play();
+        setTimeout(function() { play(); }, 50);
       }
     });
   }
 
   if (volumeSlider) {
     volumeSlider.addEventListener('input', function() {
-      if (utterance && isPlaying) {
-        utterance.volume = parseFloat(volumeSlider.value);
+      var vol = parseFloat(volumeSlider.value);
+      if (utterance) {
+        utterance.volume = vol;
       }
     });
   }
