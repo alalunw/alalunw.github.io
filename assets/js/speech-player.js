@@ -15,6 +15,7 @@
   var currentWordIndex = 0;
   var startTime = null;
   var estimatedDuration = 0;
+  var restartTimeout = null;
   
   var player = document.querySelector('[data-speech-player]');
   var playBtn = document.querySelector('[data-speech-play]');
@@ -145,6 +146,10 @@
   }
 
   function stop() {
+    if (restartTimeout) {
+      clearTimeout(restartTimeout);
+      restartTimeout = null;
+    }
     synth.cancel();
     isPlaying = false;
     playBtn.setAttribute('aria-label', 'Play');
@@ -158,16 +163,16 @@
     speedSelect.addEventListener('change', function() {
       if (isPlaying || synth.paused) {
         stop();
-        setTimeout(function() { play(); }, 50);
+        restartTimeout = setTimeout(function() { play(); }, 100);
       }
     });
   }
 
   if (volumeSlider) {
     volumeSlider.addEventListener('input', function() {
-      var vol = parseFloat(volumeSlider.value);
-      if (utterance) {
-        utterance.volume = vol;
+      if (isPlaying || synth.paused) {
+        stop();
+        restartTimeout = setTimeout(function() { play(); }, 100);
       }
     });
   }
