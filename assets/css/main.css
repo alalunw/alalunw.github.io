@@ -1466,17 +1466,21 @@ padding: var(--space-2xl) var(--space-md);
   flex: 1;
   min-width: 0;
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
 }
 
 .speech-player__progress-bar {
+  flex: 1;
   height: 4px;
   background: var(--c-border);
   border-radius: var(--radius-full);
   overflow: hidden;
   cursor: pointer;
   transition: height var(--transition-fast);
+  position: relative;
+  padding: 8px 0;
+  margin: -8px 0;
+  background-clip: content-box;
 }
 
 .speech-player__progress-bar:hover {
@@ -1489,31 +1493,6 @@ padding: var(--space-2xl) var(--space-md);
   background: var(--c-accent);
   border-radius: var(--radius-full);
   transition: width 0.1s linear;
-}
-
-.speech-player__meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  font-size: var(--text-xs);
-  color: var(--c-text-tertiary);
-  justify-content: space-between;
-}
-
-.speech-player__time,
-.speech-player__duration {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  min-width: 32px;
-  letter-spacing: 0.02em;
-}
-
-.speech-player__duration {
-  text-align: right;
-}
-
-.speech-player__separator {
-  color: var(--c-border-strong);
 }
 
 .speech-player__controls-row {
