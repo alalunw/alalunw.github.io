@@ -20,7 +20,7 @@
 
   var playBtn = document.querySelector('[data-speech-play]');
   var progressEl = document.querySelector('[data-speech-progress]');
-  var progressBar = document.querySelector('[data-speech-progress-bar]');
+  var progressContainer = document.querySelector('[data-speech-progress-container]');
   var speedSelect = document.querySelector('[data-speech-speed]');
   var volumeSlider = document.querySelector('[data-speech-volume]');
 
@@ -56,6 +56,13 @@
       if (idx === -1) idx = pos;
       boundaryOffsets.push(idx);
       pos = idx + words[i].length;
+    }
+  }
+
+  function ensureTextReady() {
+    if (!fullText) {
+      fullText = getPostText();
+      if (fullText) buildWordMap(fullText);
     }
   }
 
@@ -127,11 +134,8 @@
 
   function play() {
     if (isPlaying) return;
-    if (!fullText) {
-      fullText = getPostText();
-      if (!fullText) return;
-      buildWordMap(fullText);
-    }
+    ensureTextReady();
+    if (words.length === 0) return;
     playFromWord(seekWordIndex);
   }
 
@@ -177,13 +181,14 @@
   }
 
   function getSeekPosition(e) {
-    var rect = progressBar.getBoundingClientRect();
+    var rect = progressContainer.getBoundingClientRect();
     var x = (e.clientX || (e.touches && e.touches[0].clientX) || 0) - rect.left;
     var percent = Math.max(0, Math.min(1, x / rect.width));
     return Math.round(percent * words.length);
   }
 
   function handleSeekStart(e) {
+    ensureTextReady();
     if (words.length === 0) return;
     e.preventDefault();
     isDragging = true;
@@ -205,14 +210,16 @@
   function handleSeekEnd() {
     if (!isDragging) return;
     isDragging = false;
-    playFromWord(seekWordIndex);
+    if (isPlaying || synth.paused) {
+      playFromWord(seekWordIndex);
+    }
   }
 
   playBtn.addEventListener('click', toggle);
 
-  if (progressBar) {
-    progressBar.addEventListener('mousedown', handleSeekStart);
-    progressBar.addEventListener('touchstart', handleSeekStart, { passive: false });
+  if (progressContainer) {
+    progressContainer.addEventListener('mousedown', handleSeekStart);
+    progressContainer.addEventListener('touchstart', handleSeekStart, { passive: false });
   }
 
   document.addEventListener('mousemove', handleSeekMove);

@@ -1467,23 +1467,21 @@ padding: var(--space-2xl) var(--space-md);
   min-width: 0;
   display: flex;
   align-items: center;
+  padding: 8px 0;
+  margin: -8px 0;
+  cursor: pointer;
 }
 
 .speech-player__progress-bar {
   flex: 1;
   height: 4px;
-  background: var(--c-border);
+  background: var(--c-border-strong);
   border-radius: var(--radius-full);
   overflow: hidden;
-  cursor: pointer;
   transition: height var(--transition-fast);
-  position: relative;
-  padding: 8px 0;
-  margin: -8px 0;
-  background-clip: content-box;
 }
 
-.speech-player__progress-bar:hover {
+.speech-player__progress-container:hover .speech-player__progress-bar {
   height: 6px;
 }
 
