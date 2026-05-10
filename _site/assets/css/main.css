@@ -1,93 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<script>
-(function(){
-var t=localStorage.getItem('tit-theme');
-if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
-document.documentElement.setAttribute('data-theme','dark')
-}
-document.documentElement.classList.remove('no-js');
-if(document.body){document.body.classList.remove('no-js')}
-})();
-</script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience.">
-<meta name="author" content="AlaluNW">
-<link rel="alternate" type="application/rss+xml" title="Thoughts_In_Tremolo" href="/feed.xml">
-<link rel="canonical" href="https://alalunw.github.io/assets/css/main.css">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Thoughts_In_Tremolo | Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience.</title>
-<meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Thoughts_In_Tremolo" />
-<meta name="author" content="AlaluNW" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience." />
-<meta property="og:description" content="Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience." />
-<link rel="canonical" href="https://alalunw.github.io/assets/css/main.css" />
-<meta property="og:url" content="https://alalunw.github.io/assets/css/main.css" />
-<meta property="og:site_name" content="Thoughts_In_Tremolo" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Thoughts_In_Tremolo" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"AlaluNW"},"description":"Thoughtful essays, visual storytelling, and project-based explorations at the intersection of technology, culture, and the human experience.","headline":"Thoughts_In_Tremolo","url":"https://alalunw.github.io/assets/css/main.css"}</script>
-<!-- End Jekyll SEO tag -->
-
-<title>Thoughts In Tremolo</title>
-<link rel="stylesheet" href="/assets/css/base.css">
-<link rel="stylesheet" href="/assets/css/main.css">
-<script src="/assets/js/theme.js" defer></script>
-<script src="/assets/js/lightbox.js" defer></script>
-</head>
-<body>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <header class="site-header" role="banner">
-  <div class="site-header__inner">
-    <div class="site-header__title animate-slide">
-      <a href="/">Thoughts In Tremolo</a>
-    </div>
-    <nav class="site-nav" role="navigation" aria-label="Main navigation">
 
 
-
-
-<a href="/" class="site-nav__link" aria-label="Writing"><span>Writing</span></a>
-
-
-
-<a href="/spotify-playlists/" class="site-nav__link" aria-label="Spotify Playlists"><span>Spotify Playlists</span></a>
-
-
-
-<a href="/about/" class="site-nav__link" aria-label="About"><span>About</span></a>
-
-<button class="theme-toggle" onclick="window.__toggleTheme()" aria-label="Toggle dark mode" data-theme-toggle>
-  <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-  </svg>
-  <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-  </svg>
-</button>
-
-</nav>
-
-  </div>
-</header>
-
-
-  <main id="main-content" role="main" aria-label="Content">
-    <div class="page-layout">
-  <header class="page-header animate-in">
-    <h1 class="page-header__title"></h1>
-    
-  </header>
-
-  <div class="page-content reveal">
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('base.css');
 
 /* ============================================================
@@ -95,7 +9,7 @@ if(document.body){document.body.classList.remove('no-js')}
    Depends on base.css for reset, tokens, and element baseline
    ============================================================ */
 
-/* --- Site Header --- */
+/*  Site Header  */
 .site-header {
 position: sticky;
 top: 0;
@@ -186,7 +100,7 @@ overflow: visible;
   color: var(--c-accent);
 }
 
-/* --- Navigation --- */
+/*  Navigation  */
 .site-nav {
   display: flex;
   align-items: center;
@@ -230,7 +144,7 @@ color: var(--c-text);
 width: 100%;
 }
 
-/* --- Theme Toggle --- */
+/*  Theme Toggle  */
 .theme-toggle {
 background: none;
 border: 1px solid var(--c-border);
@@ -269,7 +183,7 @@ flex-shrink: 0; /* Prevent shrinking on mobile */
 :not([data-theme="dark"]) > .theme-toggle__icon--sun { display: none; }
 :not([data-theme="dark"]) > .theme-toggle__icon--moon { display: block; }
 
-/* --- Hero --- */
+/*  Hero  */
 .hero {
 display: grid;
 grid-template-columns: 1fr;
@@ -337,14 +251,14 @@ background-color: var(--c-accent);
 margin-top: var(--space-xl);
 }
 
-/* --- Content Area --- */
+/*  Content Area  */
 .content-area {
   max-width: var(--measure-wide);
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
 
-/* --- Post Feed --- */
+/*  Post Feed  */
 .post-feed {
   display: grid;
   grid-template-columns: 1fr;
@@ -542,7 +456,7 @@ hyphens: auto;
   background-color: var(--c-border);
 }
 
-/* --- Post Layout --- */
+/*  Post Layout  */
 .post-layout {
   max-width: var(--measure-wide);
   margin: 0 auto;
@@ -605,7 +519,7 @@ hyphens: auto;
   object-fit: contain;
 }
 
-/* --- Post Content --- */
+/*  Post Content  */
 .post-content {
   max-width: var(--measure);
   margin: 0 auto;
@@ -721,7 +635,7 @@ hyphens: auto;
   object-fit: contain;
 }
 
-/* --- Post Navigation --- */
+/*  Post Navigation  */
 .post-nav {
   display: grid;
   grid-template-columns: 1fr;
@@ -765,7 +679,7 @@ hyphens: auto;
   text-align: right;
 }
 
-/* --- Page Layout --- */
+/*  Page Layout  */
 .page-layout {
   max-width: var(--measure-wide);
   margin: 0 auto;
@@ -1103,7 +1017,7 @@ PLAYlists PAGE - Enhanced Visual Design
   color: var(--c-bg);
 }
 
-/* --- Reading Progress Bar --- */
+/*  Reading Progress Bar  */
 .reading-progress {
   position: fixed;
   top: 0;
@@ -1169,7 +1083,7 @@ transform: translateY(0);
   animation: slideInLeft 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) both;
 }
 
-/* --- Site Footer --- */
+/*  Site Footer  */
 .site-footer {
   border-top: 1px solid var(--c-border);
   padding: var(--space-3xl) var(--space-md);
@@ -1486,32 +1400,220 @@ padding: var(--space-2xl) var(--space-md);
 }
 
 .site-footer__inner {
-gap: var(--space-md);
+  gap: var(--space-md);
 }
+
 }
 
+/* Speech Player */
+.speech-player {
+  margin: var(--space-xl) 0 var(--space-lg) 0;
+  font-family: var(--font-mono);
+  width: 100%;
+}
 
-  </div>
-</div>
+.speech-player__main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--c-bg-secondary);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+}
 
-  </main>
+/* Override base.css svg { display: block } — critical for horizontal layout */
+.speech-player svg {
+  display: inline-block;
+  max-width: none;
+  height: auto;
+}
 
-  <footer class="site-footer" role="contentinfo">
-  <div class="site-footer__inner">
-    <div class="site-footer__credit">
-      &copy; 2026 AlaluNW. Thoughts in Tremolo.
-    </div>
-    <div class="site-footer__links">
-      
-      <a href="https://twitter.com/alalunw" class="site-footer__link" rel="me">Twitter</a>
-      
-      
-      <a href="https://github.com/alalunw" class="site-footer__link" rel="me">GitHub</a>
-      
-      <a href="/feed.xml" class="site-footer__link">RSS</a>
-    </div>
-  </div>
-</footer>
+.speech-player__play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: var(--c-text);
+  border: none;
+  border-radius: var(--radius-full);
+  color: var(--c-bg);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
 
-</body>
-</html>
+.speech-player__play-btn:hover {
+  background: var(--c-accent);
+  transform: scale(1.05);
+}
+
+.speech-player__play-btn .speech-player__icon--pause {
+  display: none;
+}
+
+.speech-player__play-btn[aria-label="Pause"] .speech-player__icon--play {
+  display: none;
+}
+
+.speech-player__play-btn[aria-label="Pause"] .speech-player__icon--pause {
+  display: inline-block;
+}
+
+.speech-player__progress-container {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  margin: -8px 0;
+  cursor: pointer;
+}
+
+.speech-player__progress-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--c-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  transition: height var(--transition-fast);
+  position: relative;
+}
+
+.speech-player__progress-container:hover .speech-player__progress-bar {
+  height: 8px;
+}
+
+.speech-player__progress {
+  height: 100%;
+  width: 0%;
+  background: var(--c-accent);
+  border-radius: var(--radius-full);
+  transition: width 0.1s linear;
+  position: relative;
+}
+
+/* Faint initial fill so the bar is visible even at 0% progress */
+.speech-player__progress-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--c-border-strong);
+  border-radius: var(--radius-full);
+}
+
+.speech-player__controls-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.speech-player__control-group {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+}
+
+.speech-player__control-icon {
+  color: var(--c-text-tertiary);
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+}
+
+.speech-player__volume-slider {
+  width: 70px;
+  height: 3px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--c-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.speech-player__volume-slider:hover {
+  background: var(--c-border-strong);
+}
+
+.speech-player__volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--c-text);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.speech-player__volume-slider:hover::-webkit-slider-thumb {
+  background: var(--c-accent);
+  transform: scale(1.2);
+}
+
+.speech-player__volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--c-text);
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+.speech-player__speed-select {
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-sm);
+  color: var(--c-text);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.speech-player__speed-select:hover {
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+
+.speech-player__speed-select:focus {
+  outline: none;
+  border-color: var(--c-accent);
+}
+
+@media (max-width: 600px) {
+  .speech-player__main {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+
+  .speech-player__progress-container {
+    width: 100%;
+    order: -1;
+  }
+
+  .speech-player__controls-row {
+    gap: var(--space-md);
+  }
+
+  .speech-player__volume-slider {
+    width: 50px;
+  }
+}
+
+[data-theme="dark"] .speech-player__progress-bar {
+  background: rgba(232, 228, 222, 0.12);
+}
+
+[data-theme="dark"] .speech-player__progress-bar::before {
+  background: rgba(232, 228, 222, 0.2);
+}
+

@@ -9,7 +9,7 @@ tags: [Trap, Production, Atlanta, Music History]
 author: Connor Hall
 ---
 
-## The Sound That Raised Me
+## The Sound That Formed Me
 
 I started producing beats in 2011, but I'd been hooked on trap since 2009. That was the era of Brick Squad—Waka Flocka's "Hard in Da Paint" rattling car speakers, Rick Ross's *Teflon Don* with its Lex Luger beats, and Gucci's endless stream of mixtapes. By the time I opened FL Studio, inspired by the same software that built an empire, the founding fathers' blueprint had already been built upon by a new generation.
 
