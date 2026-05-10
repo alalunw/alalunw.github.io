@@ -2,18 +2,18 @@
 layout: post
 title: "The Founding Fathers: How Atlanta's Trap Architects Built a Genre"
 subtitle: From Shawty Redd to Lex Luger - a producer's perspective on trap's sonic DNA
-cover-img: /assets/img/posts/ozzy/ozzy.jpg
-thumbnail-img: /assets/img/posts/ozzy/ozzy.jpg
-share-img: /assets/img/posts/ozzy/ozzy.jpg
+cover-img: /assets/img/posts/trap-fathers/trap-cover.svg
+thumbnail-img: /assets/img/posts/trap-fathers/trap-cover.svg
+share-img: /assets/img/posts/trap-fathers/trap-cover.svg
 tags: [Trap, Production, Atlanta, Music History]
 author: Connor Hall
 ---
 
 ## The Sound That Raised Me
 
-I started producing beats in 2013. By then, trap had already conquered the world. Lex Luger's maximalist horns had given way to Southside's minimalist darkness, and Future was singing his way through the *Monster* mixtape. But when I first opened FL Studio—inspired by the same software that built an empire—I didn't realize I was standing on the shoulders of giants.
+I started producing beats in 2011, but I'd been hooked on trap since 2009. That was the era of Brick Squad—Waka Flocka's "Hard in Da Paint" rattling car speakers, Rick Ross's *Teflon Don* with its Lex Luger beats, and Gucci's endless stream of mixtapes. By the time I opened FL Studio, inspired by the same software that built an empire, the founding fathers' blueprint had already been built upon by a new generation.
 
-To me, and to many producers of my generation, trap was simply *the sound*. It was 808s that rattled your chest, hi-hats that moved at double-time, and synths that felt like they were recorded in a haunted cathedral. But behind that sound were architects whose names don't always get the reverence they deserve.
+To me, and to many producers of my generation, trap was simply *the sound*. It was 808s that rattled your chest, hi-hats that moved at double-time, and synths that felt like they were recorded in a haunted cathedral. But behind that sound were architects whose names I didn't yet know.
 
 This is their story.
 
@@ -85,7 +85,7 @@ While Atlanta gets most of the credit, Memphis's DJ Paul and Three 6 Mafia were 
 
 By 2010, the torch was passing. Lexus "Lex Luger" Lewis, a teenager from Virginia, exploded onto the scene with Waka Flocka Flame's "Hard in Da Paint." Luger's sound was maximalist—Hans Zimmer-inspired orchestral hits layered over punishing 808s. He cited Shawty Redd and Toomp as direct influences, and his production on Rick Ross's "B.M.F." and Kanye/Jay-Z's *Watch the Throne* brought trap to stadiums.
 
-Then came Southside, who co-founded 808 Mafia with Luger in 2010 before branching into a darker, minimalist direction. His work with Future on *Monster* (2014) and *56 Nights* (2015) defined the sound of my generation—the sound I was trying to recreate in my bedroom studio.
+Then came Southside, who co-founded 808 Mafia with Luger in 2010 before branching into a darker, minimalist direction. By 2011, when I started making beats, 808 Mafia was just forming—their work with Future on *Monster* and *56 Nights* was still years away, but the foundation was being laid. This was the sound I was trying to recreate in my bedroom studio.
 
 **Essential listening:**
 - **Waka Flocka Flame - "Hard in Da Paint" (2010)** - Lex Luger's orchestral trap anthem
@@ -93,7 +93,7 @@ Then came Southside, who co-founded 808 Mafia with Luger in 2010 before branchin
 
 ## Why This History Matters
 
-When I started producing in 2013, I didn't know who Shawty Redd was. I didn't realize the hi-hats I was programming were invented by a teenager in Bankhead. I didn't understand that the 808s I was layering came from Miami bass, filtered through Memphis horror, and refined in Atlanta trap houses.
+When I started producing in 2011, I didn't know who Shawty Redd was. I didn't realize the hi-hats I was programming were invented by a teenager in Bankhead. I didn't understand that the 808s I was layering came from Miami bass, filtered through Memphis horror, and refined in Atlanta trap houses.
 
 But knowing this history changes how you produce. It reminds you that every sound has a lineage—that the 808 pattern you're tweaking was invented by someone who wanted to "make me bounce." That the synth patch you're using was chosen because it sounded like a horror movie.
 
