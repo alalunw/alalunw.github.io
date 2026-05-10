@@ -2,9 +2,9 @@
 layout: post
 title: "The Founding Fathers: How Atlanta's Trap Architects Built a Genre"
 subtitle: From Shawty Redd to Lex Luger - a producer's perspective on trap's sonic DNA
-cover-img: /assets/img/posts/trap-fathers/trap-cover.svg
-thumbnail-img: /assets/img/posts/trap-fathers/trap-cover.svg
-share-img: /assets/img/posts/trap-fathers/trap-cover.svg
+cover-img: /assets/img/posts/trap-fathers/gucci-mane.png
+thumbnail-img: /assets/img/posts/trap-fathers/gucci-mane.png
+share-img: /assets/img/posts/trap-fathers/gucci-mane.png
 tags: [Trap, Production, Atlanta, Music History]
 author: Connor Hall
 ---
