@@ -100,7 +100,3 @@ But knowing this history changes how you produce. It reminds you that every soun
 Trap isn't just a genre. It's a conversation between generations of producers, each building on the innovations of the last. Shawty Redd's hi-hats became Lex Luger's horns, which became Southside's darkness, which became... whatever comes next.
 
 As producers, we stand on shoulders. The question is: do we know whose?
-
----
-
-*Rest in peace to Shawty Lo, Young Jeezy, and all the voices we've lost from this era. Your music is eternal.*
