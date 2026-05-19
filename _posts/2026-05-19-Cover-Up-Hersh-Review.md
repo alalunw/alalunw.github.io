@@ -3,9 +3,7 @@ layout: post
 title: "Cover-Up: Seymour Hersh and the Price of Truth"
 date: 2026-05-19 12:00:00 +0000
 categories: journalism documentary review
-image:
-  path: /assets/img/posts/seymour-hersh/hersh-header.jpg
-  alt: Seymour Hersh
+image: /assets/img/posts/seymour-hersh/hersh-header.jpg
 ---
 
 ![Seymour Hersh](/assets/img/posts/seymour-hersh/hersh-header.jpg)
