@@ -6,7 +6,7 @@ categories: journalism documentary review
 image: /assets/img/posts/seymour-hersh/hersh-header.jpg
 ---
 
-![Seymour Hersh](/assets/img/posts/seymour-hersh/hersh-header.jpg)
+![Seymour Hersh](/assets/img/posts/seymour-hersh/hersh-4.jpg)
 
 I just finished watching Netflix's *Cover-Up*, the documentary about legendary investigative journalist Seymour Hersh, and I've been sitting with it for a while. There's something deeply unsettling about watching a film that asks you to reconsider everything you thought you knew about one of journalism's most controversial figures.
 
