@@ -8,6 +8,7 @@ description: >-
   at the intersection of technology, culture, and the human experience.
 baseurl: ""
 url: "https://alalunw.github.io"
+future: true
 
 # Explicitly include static assets that Jekyll might otherwise skip
 include:
