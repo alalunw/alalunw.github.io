@@ -164,6 +164,8 @@ And finally, that the only thing that matters is the work. Not the fame, not the
 
 As Herzog himself might say: everything else is just noise.
 
+End.
+
 ---
 
 > "I don't see the things that fascinate me as esoteric."

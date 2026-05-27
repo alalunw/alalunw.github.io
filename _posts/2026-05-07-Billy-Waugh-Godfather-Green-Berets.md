@@ -218,6 +218,8 @@ He kept that promise. For fifty years, Billy Waugh was at war. And when the wars
 - *The Secret History of the CIA* (various documentaries featuring Waugh's operations)
 - *Tora Bora: The True Story* (History Channel)
 
+End.
+
 ---
 
 > "There was no rest at SOG, only war, recon, rescue, sleep."

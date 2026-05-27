@@ -36,7 +36,9 @@ To have lived in the same time as Mr. John Osbourne is a privilege and an honour
 
 God bless Ozzy Osbourne.
 Your roots are endless, and long will you exist in our collective memories, for eons to come.
-Thank you Ozzy Osbourne. 
+Thank you Ozzy Osbourne.
+
+End. 
 
 
 

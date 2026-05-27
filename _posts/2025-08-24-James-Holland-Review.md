@@ -164,3 +164,4 @@ If its only significant limitation is the necessity of selectivity—a limit all
 
 For readers—whether casual or specialist—seeking *a nuanced, vivid, and moving account of how the Second World War truly ended*, *Victory ‘45* is as essential as it is timely.
 
+End.

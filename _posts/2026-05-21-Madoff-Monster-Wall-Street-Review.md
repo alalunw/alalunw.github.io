@@ -42,6 +42,8 @@ If you have any interest in finance, institutional accountability, or how system
 
 The four-part series doesn't offer catharsis. Madoff died in prison in 2021, his ashes unclaimed by his family. The money has been partly recovered, but the trust—in institutions, in markets, in the idea that someone is watching the watchers—hasn't been. Maybe that's the most harrowing part of all.
 
+End.
+
 ---
 
 *Madoff: The Monster of Wall Street* is available on Netflix. Four episodes, approximately 3.5 hours total.

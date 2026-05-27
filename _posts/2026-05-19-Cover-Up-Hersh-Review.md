@@ -44,6 +44,8 @@ If you care about journalism, power, and the stories governments tell themselves
 
 The documentary doesn't resolve the debate about Hersh's legacy. Maybe that's the point. In an era where truth feels increasingly contested, maybe the best we can ask for is someone willing to keep asking difficult questions—even when the answers make us uncomfortable.
 
+End.
+
 ---
 
 *Cover-Up* is available on Netflix. Runtime: approximately 90 minutes.

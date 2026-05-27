@@ -69,6 +69,8 @@ If you have any interest in covert operations, intelligence history, or how demo
 
 The book doesn't offer catharsis. It doesn't offer answers. What it offers is a map of territory most people don't even know exists—and a reminder that the people who operate in that territory are, depending on your perspective, either the reason you sleep safely at night or the reason you shouldn't.
 
+End.
+
 ---
 
 *Surprise, Kill, Vanish: The Secret History of CIA Paramilitary Armies, Operators, and Assassins* by Annie Jacobsen. Little, Brown and Company, 2019. 560 pages. ISBN: 978-0-316-44143-8.

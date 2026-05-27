@@ -185,4 +185,6 @@ As the final notes of “Paranoid” faded against a sky lit by fireworks and th
 
 “Back to the Beginning” did more than bid goodbye; it reaffirmed the living, beating heart of a culture Black Sabbath helped create—one that will echo down the years as new generations pick up the riffs and keep moving forward, always aware of where it began.
 
+End.
+
 ---
