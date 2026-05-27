@@ -12,9 +12,9 @@ author: Connor Hall
 <img src="/assets/img/posts/surprise-kill-vanish/skv_1.jpg" class="lightboxable" alt="Surprise Kill Vanish book cover">
 *Annie Jacobsen's Surprise, Kill, Vanish: The Secret History of CIA Paramilitary Armies, Operators, and Assassins (2019).*
 
-I first heard about this book the way I hear about most things these days—half-listening to a podcast while doing something else. Annie Jacobsen was on Joe Rogan's show, episode #1299, and something about the way she described the CIA's "third option" made me stop what I was doing. She laid it out plainly: when diplomacy fails and war is too costly, there's a third choice. You send people who don't exist to do things that never happened. You surprise. You kill. You vanish. I bought the book the same night.
+I first heard about this book when Annie Jacobsen appeared on Joe Rogan's show, episode #1299. This was back when it originally dropped—2019—and something about the way she described the CIA's "third option" stuck with me. She laid it out plainly: when diplomacy fails and war is too costly, there's a third choice. You send people who don't exist to do things that never happened. You surprise. You kill. You vanish. I made a mental note. Then life moved on, as it does.
 
-That was years ago. It's been sitting on my shelf ever since—one of those books you know you'll get to, that you *want* to get to, but that keeps getting buried under newer arrivals. I finally picked it up a few weeks ago, and I genuinely wish I'd read it sooner. Not just because it's gripping, which it is, but because it rewires how you think about American foreign policy. Once you understand the third option, you start seeing its fingerprints everywhere.
+It's been on my radar ever since—one of those books you know you'll get to, that you *want* to get to, but that keeps getting buried under newer arrivals. I finally decided to listen to it on Spotify a few weeks ago, and I genuinely wish I'd done it sooner. Not just because it's gripping, which it is, but because it rewires how you think about American foreign policy. Once you understand the third option, you start seeing its fingerprints everywhere.
 
 ## The Third Option
 
