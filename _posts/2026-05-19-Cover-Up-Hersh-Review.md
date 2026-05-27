@@ -28,7 +28,7 @@ There's an obvious tension here. Hersh's critics say he's become unreliable, too
 
 Watching this, I couldn't help but think about the world of covert operations that Hersh has spent his career investigating. There's real overlap here with figures like [Billy Waugh](/2026/05/07/Billy-Waugh-Godfather-Green-Berets.html)—the Green Beret and CIA operative whose career spanned decades of exactly the kind of black ops that Hersh reports on. Waugh operated in the shadows that Hersh tries to illuminate. Understanding one helps you understand the other.
 
-Both men represent different sides of the same coin: those who carry out covert action, and those who try to expose it. Annie Jacobsen's [Surprise, Kill, Vanish](/2026/05/27/Surprise-Kill-Vanish-Review.html) covers this same territory from the inside—the CIA's "third option" of covert action that Hersh has spent his career dragging into the light. Read together, they give you both sides of the shadow war.
+Both men represent different sides of the same coin: those who carry out covert action, and those who try to expose it. The documentary doesn't dwell on this connection, but it's there if you're thinking about the broader ecosystem of secrecy and disclosure.
 
 ## Does It Hold Up?
 
