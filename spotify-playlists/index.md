@@ -225,14 +225,23 @@ Listen on Spotify
 </a>
 </div>
 
-<div class="playlist-card">
-<div class="playlist-card__icon">🎹</div>
-<h3 class="playlist-card__title">Spotlight RZA</h3>
-<a href="https://open.spotify.com/playlist/5X5M6LgSgvMetTx12WqdIA?si=a14eb76f9f694646" class="playlist-card__link">
-Listen on Spotify
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-</a>
-</div>
+  <div class="playlist-card">
+  <div class="playlist-card__icon">🎹</div>
+  <h3 class="playlist-card__title">Spotlight RZA</h3>
+  <a href="https://open.spotify.com/playlist/5X5M6LgSgvMetTx12WqdIA?si=a14eb76f9f694646" class="playlist-card__link">
+  Listen on Spotify
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+  </div>
+
+  <div class="playlist-card">
+  <div class="playlist-card__icon">🎹</div>
+  <h3 class="playlist-card__title">Spotlight Lex Luger</h3>
+  <a href="https://open.spotify.com/playlist/4CsttEdKMOsGiV05qNbrWY" class="playlist-card__link">
+  Listen on Spotify
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+  </a>
+  </div>
 </div>
 
 <!-- Live Favourites Section -->
