@@ -1,4 +1,6 @@
-{% assign journal_posts = site.journal | sort: 'date' | reverse %}
+---
+layout: default
+---
 
 <div class="journal-container">
   <!-- Timeline Sidebar -->
@@ -8,18 +10,23 @@
     </header>
     <nav class="timeline-nav" aria-label="Journal entries">
       <ul class="timeline-list">
-        {% for post in journal_posts %}
-        <li class="timeline-entry" data-entry-id="{{ post.id }}" data-entry-title="{{ post.title | escape }}">
-          <div class="entry-content">
-            <div class="entry-meta">
-              <time datetime="{{ post.date | date_to_xmlschema }}" class="entry-date">{{ post.date | date: '%B %-d, %Y' }}</time>
-              <time class="entry-time">--:--</time>
-              {% if post.location %}<span class="entry-location">📍 {{ post.location }}</span>{% endif %}
+        {% assign journal_posts = site.journal | sort: 'date' | reverse %}
+        {% if journal_posts.size == 0 %}
+          <li>No journal posts found in site.journal</li>
+        {% else %}
+          {% for post in journal_posts %}
+          <li class="timeline-entry" data-entry-id="{{ post.id }}" data-entry-title="{{ post.title | escape }}">
+            <div class="entry-content">
+              <div class="entry-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}" class="entry-date">{{ post.date | date: '%B %-d, %Y' }}</time>
+                <time class="entry-time">--:--</time>
+                {% if post.location %}<span class="entry-location">📍 {{ post.location }}</span>{% endif %}
+              </div>
+              <p class="entry-snippet">{{ post.excerpt | default: post.content | strip_html | truncate: 100 }}</p>
             </div>
-            <p class="entry-snippet">{{ post.excerpt | default: post.content | strip_html | truncate: 100 }}</p>
-          </div>
-        </li>
-        {% endfor %}
+          </li>
+          {% endfor %}
+        {% endif %}
       </ul>
     </nav>
   </aside>
@@ -30,6 +37,7 @@
       <h1 class="chapter-title">Select an entry to begin</h1>
     </header>
     <div class="reading-content" aria-label="Selected entry content">
+      {% assign journal_posts = site.journal | sort: 'date' | reverse %}
       {% if journal_posts.size > 0 %}
         {% for post in journal_posts %}
         <div class="entry-content-full" id="entry-content-{{ post.id }}" aria-hidden="{% if forloop.first == false %}true{% else %}false{% endif %}">
@@ -37,7 +45,7 @@
         </div>
         {% endfor %}
       {% else %}
-        <p>No journal entries found.</p>
+        <p>No journal entries found in site.journal</p>
       {% endif %}
     </div>
   </section>
