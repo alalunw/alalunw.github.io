@@ -7,31 +7,31 @@
     <nav class="timeline-nav" aria-label="Journal entries">
       <ul class="timeline-list">
         <!-- Sample journal entries -->
-        <li class="timeline-entry" data-entry-id="1" data-entry-title="First Entry">
+        <li class="timeline-entry" data-entry-id="1" data-entry-title="First Entry" data-entry-time="08:30" data-entry-location="Home Office">
           <div class="entry-content">
             <div class="entry-meta">
-              <time datetime="2026-06-05" class="entry-date">June 5, 2026</time>
-              <time class="entry-time">--:--</time>
+              <time datetime="2026-06-05T08:30:00" class="entry-date">June 5, 2026</time>
+              <time class="entry-time">08:30</time>
               <span class="entry-location">📍 Home Office</span>
             </div>
             <p class="entry-snippet">Today marks the beginning of my journal. I've decided to create a space for less structured thoughts, more like a diary.</p>
           </div>
         </li>
-        <li class="timeline-entry" data-entry-id="2" data-entry-title="Second Entry">
+        <li class="timeline-entry" data-entry-id="2" data-entry-title="Second Entry" data-entry-time="14:15" data-entry-location="Coffee Shop">
           <div class="entry-content">
             <div class="entry-meta">
-              <time datetime="2026-06-04" class="entry-date">June 4, 2026</time>
-              <time class="entry-time">--:--</time>
+              <time datetime="2026-06-04T14:15:00" class="entry-date">June 4, 2026</time>
+              <time class="entry-time">14:15</time>
               <span class="entry-location">📍 Coffee Shop</span>
             </div>
             <p class="entry-snippet">Spent the morning working on the new blog layout. The journal interface is coming together nicely.</p>
           </div>
         </li>
-        <li class="timeline-entry" data-entry-id="3" data-entry-title="Third Entry">
+        <li class="timeline-entry" data-entry-id="3" data-entry-title="Third Entry" data-entry-time="07:00" data-entry-location="Park Bench">
           <div class="entry-content">
             <div class="entry-meta">
-              <time datetime="2026-06-03" class="entry-date">June 3, 2026</time>
-              <time class="entry-time">--:--</time>
+              <time datetime="2026-06-03T07:00:00" class="entry-date">June 3, 2026</time>
+              <time class="entry-time">07:00</time>
               <span class="entry-location">📍 Park Bench</span>
             </div>
             <p class="entry-snippet">Took a break from writing to sit in the park. The weather was perfect for reflection.</p>
@@ -80,6 +80,7 @@
     --accent: #0d6efd;
     --radius: 4px;
     --transition: 0.2s ease;
+    --sidebar-width: 280px;
   }
 
   * {
@@ -97,7 +98,7 @@
 
   .journal-container {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: var(--sidebar-width) 1fr;
     min-height: 100vh;
     gap: 0;
   }
@@ -126,6 +127,7 @@
     overflow: hidden;
     transition: var(--transition);
     cursor: pointer;
+    position: relative;
   }
 
   .timeline-entry:hover {
@@ -135,6 +137,16 @@
   .timeline-entry.selected {
     background-color: rgba(13, 110, 253, 0.1);
     border-left: 3px solid var(--accent);
+  }
+
+  .timeline-entry.selected::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--accent);
   }
 
   .entry-content {
@@ -230,11 +242,12 @@
       display: flex;
       overflow-x: auto;
       padding-bottom: 0.5rem;
+      gap: 1rem;
     }
 
     .timeline-entry {
       flex: 0 0 auto;
-      margin-right: 1rem;
+      margin-right: 0;
       margin-bottom: 0;
     }
 
@@ -250,9 +263,17 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    // Get elements safely
     const entries = document.querySelectorAll('.timeline-entry');
     const entryContents = document.querySelectorAll('.entry-content-full');
     const readingTitle = document.querySelector('.chapter-title');
+    const readingContent = document.querySelector('.reading-content');
+
+    // Exit early if required elements don't exist
+    if (!entries.length || !entryContents.length || !readingTitle || !readingContent) {
+      console.warn('Required elements not found for journal functionality');
+      return;
+    }
 
     // Function to show entry content by ID
     function showEntryContent(entryId) {
@@ -290,6 +311,12 @@
 
         // Update title with the clicked entry's title
         readingTitle.textContent = this.getAttribute('data-entry-title');
+        
+        // Optional: smooth scroll to top of reading area
+        readingContent.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
       });
     });
   });
