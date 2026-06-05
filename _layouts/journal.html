@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="post-layout">
+  <div class="reading-progress" data-reading-progress></div>
+  <header class="post-header animate-in">
+    {% if page.category %}
+    <span class="post-header__category">{{ page.category | capitalize }}</span>
+    {% endif %}
+    <h1 class="post-header__title">{{ page.title }}</h1>
+    <div class="post-header__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d %B %Y' }}</time>
+      {% if site.theme_config.show_reading_time %}
+      <span class="post-header__meta-divider"></span>
+      <span>{% include reading-time.html %}</span>
+      {% endif %}
+    </div>
+  </header>
+
+  {% include speech-player.html %}
+  <script src="{{ '/assets/js/speech-player.js' | relative_url }}" defer></script>
+
+  {% if page.category == 'project' and page.project_meta %}
+  <div class="post-content">
+    <div class="project-meta reveal">
+      {% for item in page.project_meta %}
+      <div class="project-meta__item">
+        <span class="project-meta__label">{{ item[0] }}</span>
+        <span class="project-meta__value">{{ item[1] }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="post-content reveal">
+    {{ content }}
+  </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-nav" aria-label="Post navigation">
+    {% if page.previous %}
+    <a href="{{ page.previous.url | relative_url }}" class="post-nav__link">
+      <span class="post-nav__label">Previous</span>
+      <span class="post-nav__title">{{ page.previous.title }}</span>
+    </a>
+    {% endif %}
+    {% if page.next %}
+    <a href="{{ page.next.url | relative_url }}" class="post-nav__link post-nav__link--next">
+      <span class="post-nav__label">Next</span>
+      <span class="post-nav__title">{{ page.next.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</article>

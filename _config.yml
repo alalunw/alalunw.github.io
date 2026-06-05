@@ -41,6 +41,9 @@ collections:
   media:
     output: true
     permalink: /media/:name/
+  journal:
+    output: true
+    permalink: /journal/:title/
 
 # Defaults
 defaults:

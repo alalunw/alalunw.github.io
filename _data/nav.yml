@@ -2,6 +2,10 @@
   url: "/"
   order: 1
 
+- label: Journal
+  url: "/journal/"
+  order: 1.5
+
 - label: Spotify Playlists
   url: "/spotify-playlists/"
   order: 2
