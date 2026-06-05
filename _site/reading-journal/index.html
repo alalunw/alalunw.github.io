@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading & Journal</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        /* Reading-Journal Specific Styles */
+        .reading-journal-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            height: 100vh;
+            font-family: var(--font-body);
+            background-color: var(--c-bg);
+            color: var(--c-text);
+        }
+
+        .timeline-sidebar {
+            border-right: 1px solid var(--c-border);
+            overflow-y: auto;
+            padding: var(--space-lg) var(--space-md);
+            background-color: var(--c-bg);
+        }
+
+        .timeline-header {
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-md);
+            border-bottom: 1px solid var(--c-border-light);
+        }
+
+        .timeline-header h2 {
+            font-size: var(--text-lg);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .timeline-entry {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--space-lg);
+            padding: var(--space-sm);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: background-color var(--transition-fast);
+        }
+
+        .timeline-entry:hover {
+            background-color: var(--c-bg-secondary);
+        }
+
+        .timeline-entry.selected {
+            background-color: var(--c-accent-subtle);
+            border-left: 3px solid var(--c-accent);
+            padding-left: calc(var(--space-sm) - 3px);
+        }
+
+        .timeline-thumbnail {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            margin-right: var(--space-sm);
+            background-color: var(--c-bg-secondary);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .timeline-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .timeline-content {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .timeline-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-xs);
+            margin-bottom: var(--space-xs);
+            font-size: var(--text-xs);
+            color: var(--c-text-tertiary);
+        }
+
+        .timeline-date, .timeline-time, .timeline-location {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .timeline-date::before, .timeline-time::before, .timeline-location::before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: var(--c-border);
+            margin: 0 var(--space-xs);
+        }
+
+        .timeline-text {
+            font-size: var(--text-sm);
+            line-height: 1.5;
+            color: var(--c-text);
+            margin-bottom: var(--space-xs);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .reading-view {
+            padding: var(--space-xl);
+            overflow-y: auto;
+        }
+
+        .reading-view .chapter-title {
+            font-family: var(--font-display);
+            font-size: var(--text-3xl);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: var(--space-lg);
+            line-height: 1.2;
+        }
+
+        .reading-view .chapter-content {
+            font-family: var(--font-body);
+            font-size: var(--text-lg);
+            line-height: 1.8;
+            color: var(--c-text);
+            max-width: 42ch;
+            margin-bottom: var(--space-xl);
+        }
+
+        .reading-view p {
+            margin-bottom: var(--space-lg);
+        }
+
+        @media (max-width: 768px) {
+            .reading-journal-layout {
+                grid-template-columns: 1fr;
+                height: auto;
+            }
+            
+            .timeline-sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--c-border);
+                height: 200px;
+            }
+            
+            .reading-view {
+                padding: var(--space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reading-journal-layout">
+        <!-- Left Pane: Timeline Sidebar -->
+        <aside class="timeline-sidebar">
+            <div class="timeline-header">
+                <h2>Journal Timeline</h2>
+                <p>Your entries in chronological order</p>
+            </div>
+            
+            <div class="timeline-entries">
+                <!-- Journal entries will be populated here -->
+                <div class="timeline-entry selected">
+                    <div class="timeline-thumbnail">
+                        <!-- Placeholder for thumbnail -->
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">April 3, 2025</span>
+                            <span class="timeline-time">14:30</span>
+                            <span class="timeline-location">Home Office</span>
+                        </div>
+                        <div class="timeline-text">
+                            Today I had a wonderful walk in the park. The cherry blossoms were in full bloom and I felt at peace.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-entry">
+                    <div class="timeline-thumbnail">
+                        <!-- Placeholder for thumbnail -->
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">April 2, 2025</span>
+                            <span class="timeline-time">09:15</span>
+                            <span class="timeline-location">Coffee Shop</span>
+                        </div>
+                        <div class="timeline-text">
+                            Started reading a new book about minimalist design principles. The first chapter really resonated with my current mindset.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-entry">
+                    <div class="timeline-thumbnail">
+                        <!-- Placeholder for thumbnail -->
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">April 1, 2025</span>
+                            <span class="timeline-time">20:45</span>
+                            <span class="timeline-location">Park Bench</span>
+                        </div>
+                        <div class="timeline-text">
+                            Finished the journal entry for today. Feeling grateful for the quiet moments that allow reflection and creativity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Right Pane: Reading View -->
+        <section class="reading-view">
+            <h1 class="chapter-title">Chapter 1: The Art of Simple Living</h1>
+            <div class="chapter-content">
+                <p>In a world that constantly demands more—more possessions, more achievements, more connections—there's a quiet revolution happening. People are discovering that true fulfillment doesn't come from accumulation, but from thoughtful subtraction.</p>
+                
+                <p>The Japanese concept of <em>ma</em>—the intentional use of empty space—teaches us that what we remove is just as important as what we keep. In design, in conversation, in our daily routines, the spaces between things often hold the most meaning.</p>
+                
+                <p>This philosophy extends beyond aesthetics into how we live our lives. When we create room in our schedules, we make space for spontaneity and joy. When we declutter our homes, we create mental clarity. When we simplify our conversations, we deepen our connections.</p>
+                
+                <p>The journey toward simplicity isn't about deprivation; it's about making room for what truly matters. It's about choosing quality over quantity, depth over breadth, and presence over performance.</p>
+                
+                <p>As we simplify our external world, we often discover that our internal landscape becomes richer. The noise fades, and we can finally hear our own thoughts clearly. This is where creativity flourishes, where insights emerge, and where we find the courage to live authentically.</p>
+                
+                <p>Start small. Choose one area of your life to simplify today. Notice how it feels. Observe what changes—not just in your external circumstances, but in your internal experience.</p>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // Placeholder JavaScript for entry selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const timelineEntries = document.querySelectorAll('.timeline-entry');
+            
+            timelineEntries.forEach(function(entry) {
+                entry.addEventListener('click', function() {
+                    // Remove selected class from all entries
+                    timelineEntries.forEach(function(e) {
+                        e.classList.remove('selected');
+                    });
+                    // Add selected class to clicked entry
+                    entry.classList.add('selected');
+                    
+                    // In a real implementation, this would update the reading pane
+                    // based on the selected journal entry
+                });
+            });
+        });
+    </script>
+</body>
+</html>
