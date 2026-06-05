@@ -3,6 +3,7 @@ layout: journal
 title: First Entry
 date: 2026-06-05
 category: diary
+location: Home
 ---
 
 Today marks the beginning of my journal. I've decided to create a space for less structured thoughts, more like a diary. Unlike the Writing section which features reviews and opinion pieces, this journal is for personal stories and reflections.
