@@ -19,7 +19,8 @@ layout: default
             <div class="entry-content">
               <div class="entry-meta">
                 <time datetime="{{ post.date | date_to_xmlschema }}" class="entry-date">{{ post.date | date: '%B %-d, %Y' }}</time>
-                {% if post.date | date: "%H:%M" != "00:00" %}<time class="entry-time">{{ post.date | date: '%H:%M' }}</time>{% else %}<time class="entry-time">--:--</time>{% endif %}
+                {% assign time_part = post.date | date: '%H:%M' %}
+                {% if time_part != '00:00' %}<time class="entry-time">{{ time_part }}</time>{% else %}<time class="entry-time">--:--</time>{% endif %}
                 {% if post.location %}<span class="entry-location">📍 {{ post.location }}</span>{% endif %}
               </div>
               <p class="entry-snippet">{{ post.excerpt | default: post.content | strip_html | truncate: 100 }}</p>
