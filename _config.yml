@@ -70,6 +70,11 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  - scope:
+      path: ""
+      type: "journal"
+    values:
+      layout: "journal"
 
 # Theme configuration
 theme_config:
