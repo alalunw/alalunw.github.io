@@ -102,6 +102,18 @@ if(document.body){document.body.classList.remove('no-js')}
         
         
           
+          <li class="timeline-entry" data-entry-id="/journal/writing-a-new-ep" data-entry-title="Writing a new EP">
+            <div class="entry-content">
+              <div class="entry-meta">
+                <time datetime="2026-06-06T19:37:00+01:00" class="entry-date">June 6, 2026</time>
+                
+                <time class="entry-time">19:37</time>
+                <span class="entry-location">📍 Home</span>
+              </div>
+              <p class="entry-snippet">Today’s post - I’m busy writing a new EP which is becoming difficult to flesh out due to constrai...</p>
+            </div>
+          </li>
+          
           <li class="timeline-entry" data-entry-id="/journal/first-entry" data-entry-title="First Entry">
             <div class="entry-content">
               <div class="entry-meta">
@@ -129,7 +141,12 @@ if(document.body){document.body.classList.remove('no-js')}
       
       
         
-        <div class="entry-content-full" id="entry-content-/journal/first-entry" aria-hidden="false">
+        <div class="entry-content-full" id="entry-content-/journal/writing-a-new-ep" aria-hidden="false">
+          <p>Today’s post - I’m busy writing a new EP which is becoming difficult to flesh out due to constraints at home. I am finding inspiration in writing and producing but limited by the ability to write but excited by the project</p>
+
+        </div>
+        
+        <div class="entry-content-full" id="entry-content-/journal/first-entry" aria-hidden="true">
           <p>This is the start of something new…</p>
 
 <p>Spent the evening working on adding this into the blog - inspired by some Peter McKinnon videos I’ve been watching lately…</p>
@@ -198,9 +215,18 @@ if(document.body){document.body.classList.remove('no-js')}
     --transition-base: 250ms cubic-bezier(0.25, 0.1, 0.25, 1);
     --transition-slow: 500ms cubic-bezier(0.25, 0.1, 0.25, 1);
     --transition-theme: 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
-  [data-theme="dark"] {
+    /* Hide elements that are not currently selected */
+    .entry-content-full[aria-hidden="true"] {
+      display: none !important;
+    }
+
+    .entry-content {
+      padding: var(--space-md);
+    }
+
+    [data-theme="dark"] {
     --c-bg: #141210;
     --c-bg-secondary: #1c1a17;
     --c-bg-tertiary: #252320;
@@ -290,9 +316,14 @@ if(document.body){document.body.classList.remove('no-js')}
     background-color: var(--c-accent);
   }
   
-  .entry-content {
-    padding: var(--space-md);
-  }
+   .entry-content {
+     padding: var(--space-md);
+   }
+
+   /* Hide elements that are not currently selected */
+   [aria-hidden="true"] {
+     display: none !important;
+   }
   
   .entry-meta {
     display: flex;
@@ -360,13 +391,18 @@ if(document.body){document.body.classList.remove('no-js')}
     max-width: var(--measure);
   }
   
-  .reading-content p {
-    margin-bottom: var(--space-lg);
-    max-width: var(--measure);
-  }
+    .reading-content p {
+      margin-bottom: var(--space-lg);
+      max-width: var(--measure);
+    }
   
-  /* Responsive design */
-  @media (max-width: 600px) {
+   /* Hide elements that are not currently selected */
+   [aria-hidden="true"] {
+     display: none !important;
+   }
+
+   /* Responsive design */
+   @media (max-width: 600px) {
     .journal-container {
       display: flex;
       flex-direction: column;
