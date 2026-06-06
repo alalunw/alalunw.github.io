@@ -1,7 +1,7 @@
 ---
 layout: journal
 title: Writing a new EP
-date: 2026-06-06
+date: 2026-06-06 19:37
 category: diary
 Location: Home
 ---
