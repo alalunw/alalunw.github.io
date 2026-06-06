@@ -368,13 +368,17 @@ if(document.body){document.body.classList.remove('no-js')}
   /* Responsive design */
   @media (max-width: 600px) {
     .journal-container {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
     }
     
     .timeline-sidebar {
       border-right: none;
       border-bottom: 1px solid var(--c-border);
-      height: 80px;
+      flex-shrink: 0;
+      min-height: 80px;
+      overflow-y: auto;
     }
     
     .timeline-header {
@@ -395,6 +399,8 @@ if(document.body){document.body.classList.remove('no-js')}
     }
     
     .reading-view {
+      flex-grow: 1;
+      overflow-y: auto;
       padding: var(--space-md);
     }
     
