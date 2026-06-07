@@ -21,7 +21,7 @@ layout: default
 <li>No journal posts found in site.journal</li>
 {% else %}
 {% for post in journal_posts %}
-<li class="timeline-entry" data-entry-id="{{ post.slug | slugify }}" data-entry-title="{{ post.title | escape }}">
+<li class="timeline-entry" data-entry-id="{{ post.slug | slugify }}" data-entry-title="{{ post.title | escape }}" data-entry-date="{{ post.date | date: '%B %-d, %Y' }}">
 <div class="entry-content">
 <div class="entry-meta">
 <time datetime="{{ post.date | date_to_xmlschema }}" class="entry-date">{{ post.date | date: '%B %-d, %Y' }}</time>
@@ -46,6 +46,7 @@ layout: default
 <span>Timeline</span>
 </button>
 <h1 class="chapter-title">Select an entry to begin</h1>
+<time class="chapter-date"></time>
 </header>
 <div class="reading-content" aria-label="Selected entry content">
 {% assign journal_posts = site.journal | sort: 'date' | reverse %}
@@ -212,9 +213,20 @@ font-family: var(--font-display);
 font-size: var(--text_3xl, 2rem);
 font-weight: 800;
 line-height: var(--line-height_tight, 1.1);
-margin-bottom: var(--space-md);
+margin-bottom: var(--space-xs);
 color: var(--c-text);
 letter-spacing: -0.025em;
+}
+
+.chapter-date {
+display: block;
+font-family: var(--font-mono, 'JetBrains Mono', Consolas, monospace);
+font-size: var(--text_sm, 0.78rem);
+font-weight: 500;
+color: var(--c-text-secondary);
+letter-spacing: 0.04em;
+text-transform: uppercase;
+margin-bottom: var(--space-md);
 }
 
 .reading-content {
@@ -421,6 +433,7 @@ document.addEventListener('DOMContentLoaded', function() {
 var entries = document.querySelectorAll('.timeline-entry');
 var entryContents = document.querySelectorAll('.entry-content-full');
 var readingTitle = document.querySelector('.chapter-title');
+var readingDate = document.querySelector('.chapter-date');
 var sidebarOpen = document.querySelector('.sidebar-open');
 var sidebarClose = document.querySelector('.sidebar-close');
 var sidebar = document.querySelector('.timeline-sidebar');
@@ -476,6 +489,9 @@ showEntryContent(firstEntryId);
 if (readingTitle) {
 readingTitle.textContent = entries[0].getAttribute('data-entry-title');
 }
+if (readingDate) {
+readingDate.textContent = entries[0].getAttribute('data-entry-date');
+}
 }
 
 entries.forEach(function(entry) {
@@ -488,6 +504,9 @@ var entryId = this.getAttribute('data-entry-id');
 showEntryContent(entryId);
 if (readingTitle) {
 readingTitle.textContent = this.getAttribute('data-entry-title');
+}
+if (readingDate) {
+readingDate.textContent = this.getAttribute('data-entry-date');
 }
 if (isMobile.matches) {
 closeSidebar();
