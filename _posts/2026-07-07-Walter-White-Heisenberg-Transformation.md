@@ -53,7 +53,7 @@ This is not a man providing for his family. This is a man who has become intoxic
 
 Walter White's ego is the engine of the entire series. Every major decision traces back to his need for recognition, control, and validation.
 
-Consider his relationship with Jesse Pinkman. Jesse is, in many ways, Walter's son—not biologically, but in the way mentorship can create kinship. Walter saves Jesse's life repeatedly. He also destroys it systematically. He poisons a child to manipulate Jesse. He watches Jane die without intervening. He enslaves Jesse in a cage.
+Consider his relationship with Jesse Pinkman. Jesse is, in many ways, Walter's son—not biologically, but in the way mentorship can create kinship. Walter saves Jesse's life repeatedly. He also destroys it systematically. He poisons Brock, Andrea's young son, to turn Jesse against Gus Fring. He watches Jane die without intervening. He delivers Jesse to Jack Welker's gang, knowing Jesse will be enslaved and forced to cook meth.
 
 Each act is rationalized. But the pattern is clear: Jesse must remain subordinate. The moment Jesse achieves independence—cooking on his own, leaving the business, finding happiness with Andrea—Walter perceives it as betrayal.
 
