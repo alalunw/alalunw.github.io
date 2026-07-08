@@ -45,7 +45,7 @@ His war with Gus Fring is not about business or safety. It is about dominance. W
 
 By the final season, the pretense collapses entirely. Walter has accumulated more money than his family could spend in generations. Jesse offers to leave the business. Walter could stop. He does not.
 
-When Jesse says, "We're done," Walter responds, "I just want you to know... I won."
+When Jesse and Mike agree to sell their methylamine and walk away, Walter refuses. Alone in the bathroom, he looks in the mirror and says: "I won."
 
 This is not a man providing for his family. This is a man who has become intoxicated by his own myth. The moral decay is complete—not because he lacks the capacity to stop, but because he no longer wants to.
 
@@ -59,7 +59,7 @@ Each act is rationalized. But the pattern is clear: Jesse must remain subordinat
 
 The ego cannot tolerate a student surpassing the master.
 
-Similarly, Walter's relationship with Hank Schrader is defined by competitive resentment. Hank is everything Walter is not: physically imposing, professionally successful, casually confident. Walter's pleasure in revealing himself as Heisenberg to Hank is not just about power—it is about finally winning a competition Hank did not know they were having.
+Similarly, Walter's relationship with Hank Schrader is defined by competitive resentment. Hank is everything Walter is not: physically imposing, professionally successful, casually confident. When Hank finally discovers Walter is Heisenberg, the moment is not triumphant—it is devastating. But Walter's years of deception, of watching Hank hunt him while maintaining the facade, reveal a man who needed to win a competition Hank did not know they were having.
 
 "I watched Jane die," Walter tells Jesse in the series' emotional climax. "I could have saved her. But I didn't."
 
