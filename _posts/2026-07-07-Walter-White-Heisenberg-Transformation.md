@@ -45,7 +45,7 @@ His war with Gus Fring is not about business or safety. It is about dominance. W
 
 By the final season, the pretense collapses entirely. Walter has accumulated more money than his family could spend in generations. Jesse offers to leave the business. Walter could stop. He does not.
 
-When Jesse and Mike agree to sell their methylamine and walk away, Walter refuses. Alone in the bathroom, he looks in the mirror and says: "I won."
+The truth emerges earlier, in Season 4. After killing Gus Fring, Skyler asks Walter if he's finally done. His response: "I won." The family justification is gone. What remains is a man who has achieved exactly what he set out to do—and cannot stop.
 
 This is not a man providing for his family. This is a man who has become intoxicated by his own myth. The moral decay is complete—not because he lacks the capacity to stop, but because he no longer wants to.
 
@@ -81,7 +81,7 @@ Heisenberg's fall is not a moral fall. It is a practical one. He is defeated not
 
 In the end, Walter engineers a finale that achieves his goals: Jesse is freed, the money reaches his family, his enemies are eliminated. He dies on his own terms, surrounded by the equipment that defined him.
 
-But the cost is absolute. His son will not speak his name. His daughter-in-law will raise his grandson without ever knowing him. His brother-in-law died because of him. Jesse, the closest thing to a son he had, was tortured and enslaved by him.
+But the cost is absolute. His son will not speak his name. His wife will raise his children without him. His brother-in-law died because of him. Jesse, the closest thing to a son he had, was tortured and enslaved by him.
 
 Walter White rose by shedding morality. Heisenberg fell by becoming what he pretended to be.
 
